@@ -2,10 +2,10 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
+title: Sumin Park # the website title (if blank, full name will be used instead)
+first_name: Sumin
+middle_name: 
+last_name: Park
 contact_note: >
   You can even add a little note about which of these is the best way to reach you.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -145,13 +145,13 @@ newsletter:
 
 collections:
   books:
-    output: true
+    output: false
   news:
     defaults:
       layout: post
-    output: true
+    output: false
   projects:
-    output: true
+    output: false
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -225,6 +225,10 @@ defaults:
 
 sass:
   style: compressed
+  quiet_deps: true
+  verbose: false
+  silence_deprecations:
+    - import
 
 # -----------------------------------------------------------------------------
 # Jekyll Minifier

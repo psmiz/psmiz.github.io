@@ -26,7 +26,7 @@ hr {
 table {
   td,
   th {
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 1px 1rem 1px 0;
   }
 
@@ -303,26 +303,30 @@ ul.task-list input[type="checkbox"] {
 
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
+    // color: var(--nav-hover-text-color);
 
     &:hover {
-      color: var(--global-hover-color);
+      // color: var(--global-hover-color);
+      color: var(--nav-hover-color);
     }
   }
 
   .navbar-nav .nav-item.active > .nav-link {
     background-color: inherit;
     font-weight: bolder;
-    color: var(--global-theme-color);
+    // color: var(--global-theme-color);
+    color: var(--nav-hover-color);
 
     &:hover {
-      color: var(--global-hover-color);
+      // color: var(--global-hover-color);
+      color: var(--nav-hover-color);
     }
   }
 
   .navbar-brand.social {
     padding-bottom: 0;
     padding-top: 0;
-    font-size: 1.7rem;
+    font-size: 2rem;
 
     a {
       img {
@@ -451,7 +455,50 @@ ul.task-list input[type="checkbox"] {
   }
 
   .contact-note {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+// Social icons in header (smaller)
+.social-header {
+  text-align: left;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+
+  .contact-icons-small {
+    font-size: 2rem;
+
+    a {
+      margin-right: 0.5rem;
+      
+      img {
+        width: 2rem;
+        height: 2rem;
+      }
+
+      svg {
+        width: 2rem;
+        height: 2rem;
+
+        image {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
+
+      i::before {
+        color: var(--global-text-color);
+        transition-property: all 0.2s ease-in-out;
+      }
+
+      &:hover {
+        text-decoration: none;
+
+        i::before {
+          color: var(--global-theme-color);
+        }
+      }
+    }
   }
 }
 
