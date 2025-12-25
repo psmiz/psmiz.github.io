@@ -26,7 +26,7 @@ hr {
 table {
   td,
   th {
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 1px 1rem 1px 0;
   }
 
@@ -215,7 +215,7 @@ ul.task-list input[type="checkbox"] {
 }
 
 .profile.float-left {
-  margin-right: 1rem;
+  margin-right: -1.5rem;
 }
 
 @media (min-width: 576px) {
@@ -326,7 +326,7 @@ ul.task-list input[type="checkbox"] {
   .navbar-brand.social {
     padding-bottom: 0;
     padding-top: 0;
-    font-size: 2rem;
+    font-size: 1.7rem;
 
     a {
       img {
@@ -455,7 +455,7 @@ ul.task-list input[type="checkbox"] {
   }
 
   .contact-note {
-    font-size: 0.9rem;
+    font-size: 0.875rem;
   }
 }
 
@@ -466,19 +466,19 @@ ul.task-list input[type="checkbox"] {
   margin-bottom: 1rem;
 
   .contact-icons-small {
-    font-size: 2rem;
+    font-size: 1.5rem;
 
     a {
-      margin-right: 0.5rem;
+      margin-right: 0.3rem;
       
       img {
-        width: 2rem;
-        height: 2rem;
+        width: 1.5rem;
+        height: 1.5rem;
       }
 
       svg {
-        width: 2rem;
-        height: 2rem;
+        width: 1.5rem;
+        height: 1.5rem;
 
         image {
           width: 1.5rem;

@@ -1,115 +1,47 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
 
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@inproceedings{park2025expertsenoughoptimalsemantic,
+      title={How Many Experts Are Enough? Towards Optimal Semantic Specialization for Mixture-of-Experts}, 
+      author={Sumin Park and Noseong Park},
+      abbr={AAAI},
+      year={2025},
+      arxiv={2512.19765},
+      booktitle={Association for the Advancement of Artificial Intelligence (AAAI)},
+      archivePrefix={arXiv},
+      preview={mass.png},
+      primaryClass={cs.LG},
+      pdf={https://arxiv.org/pdf/2512.19765},
+      abstract={Finding the optimal configuration of Sparse Mixture-ofExperts (SMoE) that maximizes semantic differentiation among experts is essential for exploiting the full potential of MoE architectures. However, existing SMoE frameworks either heavily rely on hyperparameter tuning or overlook the importance of diversifying semantic roles across experts when adapting the expert pool size. We propose Mixture-of-Experts for Adaptive Semantic Specialization (MASS), a semanticaware MoE framework for adaptive expert expansion and dynamic routing. MASS introduces two key advancements: (i) a gradient-based semantic drift detector that prompts targeted expert expansion when the existing expert pool lacks capacity to capture the full semantic diversity of the data, and (ii) an integration of adaptive routing strategy that dynamically adjusts expert usage based on token-level routing confidence mass. We first demonstrate that MASS reliably converges to the point of optimal balance between cost-performance trade-off with notably improved sematic specialization in a highly controlled synthetic setup. Further empirical results on real-world datasets across language and vision domains show that MASS consistently outperforms a range of strong MoE baselines, demonstrating its domain robustness and enhanced expert specialization.},
+      url={https://arxiv.org/abs/2512.19765}, 
+      selected=true
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@inproceedings{parkdars,
+      title={DARS: ROBUST SPARSE FINE-TUNING WITH REGULARIZED SUBSPACE DISALIGNMENT},
+      author={Park, Sumin and Park, Noseong},
+      abbr={ICLR Workshop},
+      arkiv={},
+      preview={dars.png},
+      booktitle={First Workshop on Scalable Optimization for Efficient and Adaptive Foundation Models (SCOPE)},
+      abstract={Recent works have identified the alignment, which measures a layerwise weight correlation, as a novel yet crucial mechanism for feature learning. We investigate an underlying connection between the alignment learning and the structural fitting of a network to the training data span. Based on this insight, we further demonstrate that fine-tuning on out-of-distribution (OOD) data disrupts this well-aligned structure fitted during the pre-training phase, degrading generalization performance. To address this, we propose DARS, DisAlignment-Regularized Sparse fine-tuning, a novel sparse fine-tuning approach that mitigates disalignment by letting the gradient update to be partially constrained within the principal subspace of the pre-trained network, constructed based on the in-distribution (ID) data used for its pre-training. Specifically, we define the two disjoint subsets of trainable parameters for sparse channel unfreezing: i) a random subset and ii) a subset with higher gradient projections onto the principal subspace. The latter serves as a disalignment regularizer during fine-tuning, while the random subset ensures a minimal bias in parameter selection. By adjusting the ratio between the two subsets, we can control the strength of subspace regularization, thereby balancing the trade-off between generalization capacity and strong fitting to new downstream tasks. By employing DARS, we achieved SOTA performance on various benchmarks, including commonsense and arithmetic reasoning tasks, across LLaMA-7B and LLaMA2-7B.},
+      pdf={https://openreview.net/pdf?id=nV6e9KjJrH},
+      url={https://openreview.net/forum?id=nV6e9KjJrH&referrer=%5Bthe%20profile%20of%20Sumin%20Park%5D(%2Fprofile%3Fid%3D~Sumin_Park2)}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
-}
-
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
-  selected={true},
-  inspirehep_id = {3255}
-}
-
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+@inproceedings{choi2024pandaexpandedwidthawaremessage,
+      title={PANDA: Expanded Width-Aware Message Passing Beyond Rewiring}, 
+      author={Jeongwhan Choi and Sumin Park and Hyowon Wi and Sung-Bae Cho and Noseong Park},
+      year={2024},
+      abbr={ICML},
+      arxiv={2406.03671},
+      booktitle={International Conference on Machine Learning (ICML)},
+      preview={panda.png},
+      archivePrefix={arXiv},
+      abstract={Recent research in the field of graph neural network (GNN) has identified a critical issue known as "over-squashing," resulting from the bottleneck phenomenon in graph structures, which impedes the propagation of long-range information. Prior works have proposed a variety of graph rewiring concepts that aim at optimizing the spatial or spectral properties of graphs to promote the signal propagation. However, such approaches inevitably deteriorate the original graph topology, which may lead to a distortion of information flow. To address this, we introduce an expanded width-aware (PANDA) message passing, a new message passing paradigm where nodes with high centrality, a potential source of over-squashing, are selectively expanded in width to encapsulate the growing influx of signals from distant nodes. Experimental results show that our method outperforms existing rewiring methods, suggesting that selectively expanding the hidden state of nodes can be a compelling alternative to graph rewiring for addressing the over-squashing.},
+      primaryClass={cs.LG},
+      pdf={https://arxiv.org/pdf/2406.03671},
+      url={https://arxiv.org/abs/2406.03671}, 
+      selected=true
 }

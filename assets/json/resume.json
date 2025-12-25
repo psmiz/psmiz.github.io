@@ -1,200 +1,135 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
-    "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "name": "Sumin Park",
+    "status": "M.S. Student in Computer Science",
+    "email": "psmiz@kaist.ac.kr",
+    "phone": "+82-10-3475-0804",
+    "url": "https://psmiz.github.io",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "city": "Daejeon",
+      "countryCode": "KR",
+      "region": "South Korea"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "LinkedIn",
+        "url": "https://www.linkedin.com/in/sumin-park-935a79340/"
+      },
+      {
+        "network": "GitHub",
+        "url": "https://github.com/psmiz"
       }
     ]
   },
-  "work": [
-    {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
-    }
-  ],
+
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "institution": "Korea Advanced Institute of Science and Technology (KAIST)",
+      "location": "Daejeon, South Korea",
+      "area": "Computer Science",
+      "studyType": "M.S.",
+      "startDate": "2024-09",
+      "endDate": "Present",
+      "score": "4.18 / 4.30"
+    },
+    {
+      "institution": "Ewha Womans University",
+      "location": "Seoul, South Korea",
+      "area": "Brain and Cognitive Sciences & Life Sciences",
+      "studyType": "B.S.",
+      "startDate": "2016-03",
+      "endDate": "2021-02",
+      "score": "4.07 / 4.30 (Summa Cum Laude)"
     }
   ],
-  "awards": [
+
+  "work": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "name": "Big Data Analysis & Learning Laboratory (BigDyL), KAIST",
+      "position": "Master’s Student Researcher",
+      "location": "Daejeon, South Korea",
+      "startDate": "2024-09",
+      "endDate": "Present",
+      "summary": "Research on LLM architectures, representation learning, explainable LLMs, and brain-inspired AI.",
+      "highlights": [
+        "Advisor: Noseong Park"
+      ]
+    },
+    {
+      "name": "Big Data Analysis & Learning Laboratory (BigDyL), KAIST",
+      "position": "Research Intern",
+      "location": "Seoul, South Korea",
+      "startDate": "2023-07",
+      "endDate": "2024-08",
+      "summary": "Research on graph representation learning and graph neural networks.",
+      "highlights": [
+        "Advisor: Noseong Park"
+      ]
+    },
+    {
+      "name": "DNI Consulting",
+      "position": "Data Scientist",
+      "location": "Seoul, South Korea",
+      "startDate": "2022-02",
+      "endDate": "2024-04",
+      "summary": "Data analysis and modeling for B2B marketing and customer segmentation."
+    },
+    {
+      "name": "Cell Physiology Laboratory, Seoul National University",
+      "position": "Undergraduate Research Intern",
+      "location": "Seoul, South Korea",
+      "startDate": "2020-08",
+      "endDate": "2021-01",
+      "summary": "Research on PFC-involved systems consolidation.",
+      "highlights": [
+        "Advisor: Seokho Lee"
+      ]
+    },
+    {
+      "name": "Neurobiology Laboratory, Seoul National University",
+      "position": "Undergraduate Research Intern",
+      "location": "Seoul, South Korea",
+      "startDate": "2018-12",
+      "endDate": "2019-02",
+      "summary": "Research on dopaminergic reward circuitry.",
+      "highlights": [
+        "Advisor: Bongkiun Kaang"
+      ]
     }
   ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
-    },
-    {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
-    },
-    {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
-    }
-  ],
+
   "publications": [
     {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+      "name": "How Many Experts Are Enough? Towards Optimal Semantic Specialization for Mixture-of-Experts",
+      "publisher": "AAAI 2026",
+      "releaseDate": "2026",
+      "authors": "Sumin Park, Noseong Park"
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
+      "name": "DARS: Robust Sparse Fine-Tuning with Regularized Subspace Disalignment",
+      "publisher": "ICLR 2025 Workshop (SCOPE)",
+      "releaseDate": "2025",
+      "authors": "Sumin Park, Noseong Park"
     },
     {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "name": "PANDA: Expanded Width-Aware Message Passing Beyond Rewiring",
+      "publisher": "ICML 2024",
+      "releaseDate": "2024",
+      "authors": "Jeongwhan Choi, Sumin Park, Hyowon Wi, Sung-Bae Cho, Noseong Park"
     }
   ],
-  "skills": [
-    {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "German",
-      "fluency": "Native speaker",
-      "icon": ""
-    },
-    {
-      "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
-    }
-  ],
-  "interests": [
-    {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    },
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    }
-  ],
+
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "name": "Simulation-Based Defect Variable Identification from High-Resolution Images",
+      "startDate": "2025-03",
+      "endDate": "2025-12",
+      "summary": "Samsung–KAIST industry-academia project on simulation-based defect variable prediction using high-resolution images.",
+      "highlights": [
+        "Multi-task, multi-class classification framework",
+        "ViT with hierarchical attention for high-resolution processing",
+        "Achieved 99.41% classification accuracy"
+      ]
     }
   ]
 }
