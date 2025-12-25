@@ -1165,6 +1165,19 @@ nav[data-toggle="toc"] {
     top: 0;
   }
 
+  /* Fix profile image on mobile */
+  .profile {
+    width: 60% !important;
+    max-width: 300px;
+    float: none !important;
+    margin: 0 auto 1rem auto !important;
+    display: block;
+    
+    img {
+      width: 100%;
+    }
+  }
+
   /* Responsive code blocks for mobile */
   pre {
     font-size: 0.875rem;
