@@ -15,6 +15,13 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a second-year Master student at Korea Advanced Institute of Science and Technology (KAIST), advised by Professor [Noseong Park](https://sites.google.com/view/npark/home?authuser=0). My research generally lies in LLM architectures, representation learning, and interpretability in large language models. Specifically, my recent work focuses on linear attention mechanisms based on state-space dynamics and Mixture-of-Experts (MoE) architectures for efficient and scalable LLMs.
+I am a second-year Master student at Korea Advanced Institute of Science and Technology (KAIST), advised by Professor [Noseong Park](https://sites.google.com/view/npark/home?authuser=0). My research generally focuses on interpretable LLM architectures, and representation learning for sequential and graph-structured data. Specifically, my recent work focuses on linear attention mechanisms based on state-space dynamics and Mixture-of-Experts architectures for efficient and scalable LLMs.
 
-Building on my undergraduate background in neuroscience, I am also interested in brain-inspired AI as a longer-term research direction, exploring how principles of biological learning can enhance the architectural design of language models.
+Building on my undergraduate background in neuroscience, my longer-term research direction lies in brain-inspired inductive biases as a conceptual framework for understanding and designing neural architectures and learning dynamics.
+
+
+<!-- , exploring how principles of biological learning can enhance the architectural design of language models.
+More broadly, I am interested in understanding how inductive biases embedded in model architectures shape optimization dynamics and learned representations.
+
+
+a conceptual lens for architecture and learning principles -->
