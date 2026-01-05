@@ -1,7 +1,15 @@
 metadata:
-  last_updated: '2025-11-09'
+  last_updated: '2026-01-05'
 papers:
-  qc6CJjYAAAAJ:zEYdoEEwLqEC:
-    citations: 11
-    title: "Sur les forces pond\xE9romotrices qui agissent sur des conducteurs ferromagn\xE9tiques dispos\xE9s dans un champ magn\xE9tique et parcourus par un courant"
-    year: '1910'
+  bhkxtOcAAAAJ:2osOgNQ5qMEC:
+    citations: 0
+    title: How Many Experts Are Enough? Towards Optimal Semantic Specialization for Mixture-of-Experts
+    year: '2025'
+  bhkxtOcAAAAJ:d1gkVwhDpl0C:
+    citations: 14
+    title: 'Panda: Expanded width-aware message passing beyond rewiring'
+    year: '2024'
+  bhkxtOcAAAAJ:u5HHmVD_uO8C:
+    citations: 0
+    title: 'DARS: ROBUST SPARSE FINE-TUNING WITH REGULARIZED SUBSPACE DISALIGNMENT'
+    year: Unknown Year
