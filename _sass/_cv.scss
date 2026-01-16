@@ -2,6 +2,20 @@
  * CV shared styles
  *****************************/
 
+/* Date badge styling - override theme color for date badges */
+.badge.font-weight-bold.danger-color-dark,
+span.badge.danger-color-dark,
+.danger-color-dark.badge {
+  background-color: #9e9d9f !important; /* Gray color - change to your preference */
+  color: white !important;
+}
+
+/* Additional specificity for CV page badges */
+.cv .card .list-group-item .badge.danger-color-dark {
+  background-color: #afadb0 !important;
+  color: white !important;
+}
+
 div.container-link-button {
   margin-right: 0.5rem;
 }
