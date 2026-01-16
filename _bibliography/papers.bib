@@ -1,6 +1,34 @@
 ---
 ---
+@inproceedings{park2025amsg,
+      title={Q-Delta: Beyond Key–Value Associative State Evolution}, 
+      author={Sumin Park and Noseong Park},
+      abbr={Under Review},
+      year={2025},
+      preview={qdelta.png},
+      booktitle={Under Review},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      abstract={Linear attention reformulates sequence modeling as recurrent state evolution, enabling efficient linear-time inference. 
+      Under the key–value associative paradigm, existing approaches restrict the role of the query to the readout operation, decoupling it from state evolution. We show that query-conditioned state readout induces a structured value prediction over accumulated memory that complements key-based retrieval.
+      Based on this insight, we propose {Q-Delta}, a query-aware delta rule that integrates mixed key--query prediction errors into state evolution, enabling jointly corrective dynamics while preserving delta-rule efficiency. We establish stability guarantees for the resulting dynamics and derive a hardware-efficient chunkwise-parallel formulation with a custom Triton implementation.
+      Empirical results demonstrate stable optimization, competitive throughput, and consistent improvements over strong baselines on language modeling and long-context retrieval tasks.},
+      url={}, 
+      selected=true
+}
 
+@inproceedings{park2025amsg,
+      title={ASMG: Data Structure-Aware Routing via Incremental Subspace Learning for MoE}, 
+      author={Sumin Park and Noseong Park},
+      abbr={Under Review},
+      year={2025},
+      booktitle={Under Review},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      abstract={Mixture-of-Experts (MoE) models scale model capacity efficiently by selectively routing inputs to a subset of specialized experts. However, their performance critically hinges on the gating mechanism, which is typically implemented as a shallow linear projection followed by a softmax or sigmoid activation. This minimal design lacks the representational capacity to capture structural variations in the input, often resulting in weak expert specialization and suboptimal routing. To address this limitation, we propose Adaptive Structure-Aware MoE Gating (ASMG), a data-driven gating mechanism that dynamically interpolates between a standard learnable gating matrix and an evolving principal subspace learned via the Generalized Hebbian Algorithm (GHA). By tracking input structure with iterative basis updates, ASMG enables the gating function to remain both task- supervised and structure-aware throughout training. We validate our method through (i) a highly controlled synthetic task based on multinomial HMMs and (ii) extensive real-world benchmarks spanning multiple domains and training regimes, including both finetuning and pretraining. Across a wide range of evaluations, ASMG achieves consistent gains over strong MoE baselines. Moreover, optionally enabling unsupervised GHA updates at test time further improves robustness under distribution shifts, offering an online adaptation mechanism that enhances standard gating with stronger OOD resilience.},
+      url={}, 
+      selected=false
+}
 
 @inproceedings{park2025expertsenoughoptimalsemantic,
       title={How Many Experts Are Enough? Towards Optimal Semantic Specialization for Mixture-of-Experts}, 
