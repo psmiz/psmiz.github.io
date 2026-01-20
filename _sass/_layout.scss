@@ -48,6 +48,12 @@ body.sticky-bottom-footer {
   max-width: $max-content-width;
 }
 
+// Make container wider for publications page
+.publications .container,
+body:has(.publications) .container {
+  max-width: $max-content-width;
+}
+
 // Profile
 .profile {
   img {
