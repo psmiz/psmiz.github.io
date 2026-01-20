@@ -26,7 +26,7 @@
       primaryClass={cs.LG},
       abstract={Mixture-of-Experts (MoE) models scale model capacity efficiently by selectively routing inputs to a subset of specialized experts. However, their performance critically hinges on the gating mechanism, which is typically implemented as a shallow linear projection followed by a softmax or sigmoid activation. This minimal design lacks the representational capacity to capture structural variations in the input, often resulting in weak expert specialization and suboptimal routing. To address this limitation, we propose Adaptive Structure-Aware MoE Gating (ASMG), a data-driven gating mechanism that dynamically interpolates between a standard learnable gating matrix and an evolving principal subspace learned via the Generalized Hebbian Algorithm (GHA). By tracking input structure with iterative basis updates, ASMG enables the gating function to remain both task- supervised and structure-aware throughout training. We validate our method through (i) a highly controlled synthetic task based on multinomial HMMs and (ii) extensive real-world benchmarks spanning multiple domains and training regimes, including both finetuning and pretraining. Across a wide range of evaluations, ASMG achieves consistent gains over strong MoE baselines. Moreover, optionally enabling unsupervised GHA updates at test time further improves robustness under distribution shifts, offering an online adaptation mechanism that enhances standard gating with stronger OOD resilience.},
       url={}, 
-      selected=false
+      selected=true
 }
 
 @inproceedings{park2025expertsenoughoptimalsemantic,
