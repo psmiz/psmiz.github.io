@@ -101,20 +101,20 @@
   "publications": [
     {
       "name": "Q-Delta: Beyond Key–Value Associative State Evolution",
-      "publisher": "Review",
+      "publisher": "Under Review",
       "releaseDate": "2026",
       "authors": "Sumin Park, Seojin Kim, Noseong Park"
     },
     {
-      "name": "ASMG: Data Structure-Aware Routing via Incremental Subspace Learning for MoE",
-      "publisher": "Review",
-      "releaseDate": "2025",
+      "name": "Rethinking MoE Routing as Structure-Aware Subspace Learning",
+      "publisher": "UnderReview",
+      "releaseDate": "2026",
       "authors": "Sumin Park, Noseong Park"
     },
     {
       "name": "How Many Experts Are Enough? Towards Optimal Semantic Specialization for Mixture-of-Experts",
-      "publisher": "AAAI 2025",
-      "releaseDate": "2025",
+      "publisher": "AAAI 2026",
+      "releaseDate": "2026",
       "authors": "Sumin Park, Noseong Park"
     },
     {
