@@ -51,7 +51,7 @@
       title={How Many Experts Are Enough? Towards Optimal Semantic Specialization for Mixture-of-Experts}, 
       author={Sumin Park and Noseong Park},
       abbr={AAAI},
-      year={2025},
+      year={2026},
       arxiv={2512.19765},
       booktitle={Association for the Advancement of Artificial Intelligence (AAAI)},
       archivePrefix={arXiv},
@@ -63,11 +63,25 @@
       selected=true
 }
 
+@inproceedings{choi2025aregraphtransformersnecessary,
+      title={Are Graph Transformers Necessary? Efficient Long-Range Message Passing with Fractal Nodes in MPNNs}, 
+      author={Jeongwhan Choi and Seungjun Park and Sumin Park and Sung-Bae Cho and Noseong Park},
+      abbr={AAAI (Oral)},
+      year={2026},
+      arxiv={2511.13010},
+      booktitle={Association for the Advancement of Artificial Intelligence (AAAI)},
+      archivePrefix={arXiv},
+      pdf={https://arxiv.org/pdf/2511.13010},
+      abstract={Graph Neural Networks (GNNs) have emerged as powerful tools for learning on graph-structured data, but often struggle to balance local and global information. While graph Transformers aim to address this by enabling long-range interactions, they often overlook the inherent locality and efficiency of Message Passing Neural Networks (MPNNs). We propose a new concept called fractal nodes, inspired by the fractal structure observed in real-world networks. Our approach is based on the intuition that graph partitioning naturally induces fractal structure, where subgraphs often reflect the connectivity patterns of the full graph. Fractal nodes are designed to coexist with the original nodes and adaptively aggregate subgraph-level feature representations, thereby enforcing feature similarity within each subgraph. We show that fractal nodes alleviate the over-squashing problem by providing direct shortcut connections that enable long-range propagation of subgraph-level representations. Experiment results show that our method improves the expressive power of MPNNs and achieves comparable or better performance to graph Transformers while maintaining the computational efficiency of MPNN by improving the long-range dependencies of MPNN.},
+      preview={fractal.png},
+}
+
 @inproceedings{parkdars,
       title={DARS: ROBUST SPARSE FINE-TUNING WITH REGULARIZED SUBSPACE DISALIGNMENT},
       author={Park, Sumin and Park, Noseong},
       abbr={ICLR Workshop},
       arkiv={},
+      year={2025},
       preview={dars.png},
       booktitle={First Workshop on Scalable Optimization for Efficient and Adaptive Foundation Models (SCOPE)},
       abstract={Recent works have identified the alignment, which measures a layerwise weight correlation, as a novel yet crucial mechanism for feature learning. We investigate an underlying connection between the alignment learning and the structural fitting of a network to the training data span. Based on this insight, we further demonstrate that fine-tuning on out-of-distribution (OOD) data disrupts this well-aligned structure fitted during the pre-training phase, degrading generalization performance. To address this, we propose DARS, DisAlignment-Regularized Sparse fine-tuning, a novel sparse fine-tuning approach that mitigates disalignment by letting the gradient update to be partially constrained within the principal subspace of the pre-trained network, constructed based on the in-distribution (ID) data used for its pre-training. Specifically, we define the two disjoint subsets of trainable parameters for sparse channel unfreezing: i) a random subset and ii) a subset with higher gradient projections onto the principal subspace. The latter serves as a disalignment regularizer during fine-tuning, while the random subset ensures a minimal bias in parameter selection. By adjusting the ratio between the two subsets, we can control the strength of subspace regularization, thereby balancing the trade-off between generalization capacity and strong fitting to new downstream tasks. By employing DARS, we achieved SOTA performance on various benchmarks, including commonsense and arithmetic reasoning tasks, across LLaMA-7B and LLaMA2-7B.},

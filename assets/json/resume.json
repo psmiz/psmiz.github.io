@@ -129,6 +129,12 @@
       "authors": "Sumin Park, Noseong Park"
     },
     {
+      "name": "Are Graph Transformers Necessary? Efficient Long-Range Message Passing with Fractal Nodes in MPNNs",
+      "publisher": "AAAI 2026 (Oral)",
+      "releaseDate": "2026",
+      "authors": "Jeongwhan Choi, Seungjun Park, Sumin Park, Sung-Bae Cho, Noseong Park"
+    },
+    {
       "name": "DARS: Robust Sparse Fine-Tuning with Regularized Subspace Disalignment",
       "publisher": "ICLR 2025 Workshop (SCOPE)",
       "releaseDate": "2025",
