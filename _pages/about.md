@@ -6,7 +6,7 @@ subtitle: MS Student at KAIST
 
 profile:
   align: left
-  image: profile_img.png
+  image: profile_img2.png
   image_circular: false # crops the image to make it circular
 
 news: true  # includes a list of news items
