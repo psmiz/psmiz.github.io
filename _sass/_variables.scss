@@ -10,16 +10,16 @@ $red-color: #ff3636 !default;
 $red-color-dark: #b71c1c !default;
 $orange-color: #f29105 !default;
 $blue-color: #0076df !default;
-$blue-color-dark: #00369f !default;
-$light-point-color: #4d26c2 !default;     //#2bdcd6, #2bd0dc, #17bea8, c226ba
-$cyan-color: #2bd0dc !default;     //#2bdcd6, #2bd0dc
+$blue-color-dark: #29488d !default;
+$light-point-color: #5074c2 !default;
+$cyan-color: #2bd0dc !default;
 $light-cyan-color: color.adjust($cyan-color, $lightness: 25%);
 $green-color: #00ab37 !default;
 $green-color-lime: #b7d12a !default;
 $green-color-dark: #009f06 !default;
 $green-color-light: #ddffdd !default;
 $green-color-bright: #11d68b !default;
-$purple-color: #7f4ff0 !default;  //7f4ff0 e84ff0
+$purple-color: #5b2c6f !default;
 $light-purple-color: color.adjust($purple-color, $lightness: 25%);
 $pink-color: #f92080 !default;
 $pink-color-light: #ffdddd !default;
@@ -30,12 +30,13 @@ $grey-color-light: color.adjust($grey-color, $lightness: 40%);
 $grey-color-dark: #1c1c1d;
 $grey-900: #212529;
 
-$white-color: #f6f7fa !default;  // #eaecef
+$white-color: #f8f9f9 !default;
 $black-color: #000000 !default;
+$card-bg-light: #effaf7 !default;
 
 // Theme colors
 
-$code-bg-color-light: rgba($purple-color, 0.05);
+$code-bg-color-light: #e5f2ef;
 $code-bg-color-dark: #2c3237 !default;
 
 // Font awesome location

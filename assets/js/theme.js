@@ -256,17 +256,17 @@ let transTheme = () => {
 let determineThemeSetting = () => {
   let themeSetting = localStorage.getItem("theme");
   if (themeSetting != "dark" && themeSetting != "light" && themeSetting != "system") {
-    themeSetting = "light";
+    themeSetting = "dark";
   }
   return themeSetting;
 };
 
 // Determine the computed theme, which can be "dark" or "light". If the theme setting is
-// "system", default to light mode.
+// "system", default to dark mode.
 let determineComputedTheme = () => {
   let themeSetting = determineThemeSetting();
   if (themeSetting == "system") {
-    return "light";
+    return "dark";
   } else {
     return themeSetting;
   }
