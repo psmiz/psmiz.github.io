@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: MS candidate at KAIST
+subtitle: M.S. candidate at KAIST
 
 profile:
   align: right
@@ -24,7 +24,7 @@ social: true  # includes social icons at the bottom of the page
 
 I am a Master's student at School of Computing, Korea Advanced Institute of Science and Technology (KAIST), advised by Professor [Noseong Park](https://sites.google.com/view/npark/home?authuser=0). 
 My research focuses on **how architectural inductive biases and training dynamics give rise to structured internal representations and functional specialization in large-scale neural networks**.
-More specifically, my current interest includes:
+More specifically, my current interests include:
 
 {% include research_interest_inline.liquid %}
 
