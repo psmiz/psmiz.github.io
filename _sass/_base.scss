@@ -199,8 +199,8 @@ ul.task-list input[type="checkbox"] {
   width: 100%;
 
   .more-info {
-    margin-bottom: 5px;
-    margin-top: 5px;
+    margin-bottom: 4px;
+    margin-top: 4px;
     font-family: monospace;
 
     p {
@@ -990,7 +990,7 @@ footer.sticky-bottom {
   .selected-paper-year {
     font-size: 0.9rem;
     font-weight: 600;
-    color: $blue-color-dark;
+    color: var(--global-theme-color);
     text-transform: uppercase;
     letter-spacing: 0.02em;
   }
