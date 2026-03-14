@@ -3,9 +3,9 @@
 @inproceedings{park2025qdelta,
       title={Q-Delta: Beyond Key–Value Associative State Evolution}, 
       author={Sumin Park and Seojin Kim and Noseong Park},
-      abbr={Review},
+      abbr={In Review},
       year={2026},
-      booktitle={Review},
+      booktitle={In Review},
       archivePrefix={arXiv},
       primaryClass={cs.LG},
       abstract={Linear attention reformulates sequence modeling as recurrent state evolution, enabling efficient linear-time inference. 
@@ -14,15 +14,17 @@
       Empirical results demonstrate stable optimization, competitive throughput, and consistent improvements over strong baselines on language modeling and long-context retrieval tasks.},
       url={},
       preview={qdelta.png},
+      summary={Query-aware delta rule for linear attention that uses mixed key--query prediction errors, enabling richer, jointly corrective state evolution dynamics},
+      tags={Linear Attention, SSMs, LLMs},
       selected=true
 }
 
 @inproceedings{park2025amsg,
       title={STAR: Rethinking MoE Routing as Structure-Aware Subspace Learning}, 
       author={Sumin Park and Noseong Park},
-      abbr={Review},
+      abbr={In Review},
       year={2026},
-      booktitle={Review},
+      booktitle={In Review},
       archivePrefix={arXiv},
       primaryClass={cs.LG},
       abstract={Mixture-of-Experts (MoE) scales model capacity
@@ -44,6 +46,8 @@
       robustness under distribution shifts.},
       url={}, 
       preview={star.png},
+      summary={Input-aware MoE routing based on incremental subspace learning for evoloving input representation},
+      tags={MoE, Representation, LLMs},
       selected=true
 }
 
@@ -60,6 +64,8 @@
       abstract={Finding the optimal configuration of Sparse Mixture-ofExperts (SMoE) that maximizes semantic differentiation among experts is essential for exploiting the full potential of MoE architectures. However, existing SMoE frameworks either heavily rely on hyperparameter tuning or overlook the importance of diversifying semantic roles across experts when adapting the expert pool size. We propose Mixture-of-Experts for Adaptive Semantic Specialization (MASS), a semanticaware MoE framework for adaptive expert expansion and dynamic routing. MASS introduces two key advancements: (i) a gradient-based semantic drift detector that prompts targeted expert expansion when the existing expert pool lacks capacity to capture the full semantic diversity of the data, and (ii) an integration of adaptive routing strategy that dynamically adjusts expert usage based on token-level routing confidence mass. We first demonstrate that MASS reliably converges to the point of optimal balance between cost-performance trade-off with notably improved sematic specialization in a highly controlled synthetic setup. Further empirical results on real-world datasets across language and vision domains show that MASS consistently outperforms a range of strong MoE baselines, demonstrating its domain robustness and enhanced expert specialization.},
       url={https://arxiv.org/abs/2512.19765}, 
       preview={mass.png},
+      summary={Adaptive MoE expansion mehcanism based on gradient-guided semantic drift signals},
+      tags={MoE},
       selected=true
 }
 
@@ -100,6 +106,8 @@
       abstract={Recent research in the field of graph neural network (GNN) has identified a critical issue known as "over-squashing," resulting from the bottleneck phenomenon in graph structures, which impedes the propagation of long-range information. Prior works have proposed a variety of graph rewiring concepts that aim at optimizing the spatial or spectral properties of graphs to promote the signal propagation. However, such approaches inevitably deteriorate the original graph topology, which may lead to a distortion of information flow. To address this, we introduce an expanded width-aware (PANDA) message passing, a new message passing paradigm where nodes with high centrality, a potential source of over-squashing, are selectively expanded in width to encapsulate the growing influx of signals from distant nodes. Experimental results show that our method outperforms existing rewiring methods, suggesting that selectively expanding the hidden state of nodes can be a compelling alternative to graph rewiring for addressing the over-squashing.},
       primaryClass={cs.LG},
       preview={panda.png},
+      summary={Expanded width-aware message passing for GNNs to address the over-squashing problem},
+      tags={GNNs},
       pdf={https://arxiv.org/pdf/2406.03671},
       url={https://arxiv.org/abs/2406.03671}, 
       selected=true

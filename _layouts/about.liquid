@@ -45,7 +45,7 @@ layout: default
       </div>
     {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
+    <div class="about-bio clearfix">{{ content }}</div>
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
@@ -67,7 +67,7 @@ layout: default
     {% if page.selected_papers %}
       <h2>
         <div style="height: 0.8em;"></div>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected publications</a>
+        <a href="{{ '/publications/' | relative_url }}" style="color:rgb(55, 61, 74)">Selected publications</a>
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}

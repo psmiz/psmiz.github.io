@@ -26,15 +26,25 @@ body.fixed-top-nav {
 // Adjust gap between header and page title
 .post {
   margin-top: -1rem;
-  
+
   .post-header {
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
   }
-  
+
+  .post-header .desc {
+    color: var(--global-text-color-light);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .post-title {
+    margin-bottom: 0.25rem;
+  }
+
   // Make bold text match publication title boldness
   article {
     strong, b {
-      font-weight: bolder; /* Match publication title weight */
+      font-weight: bolder;
     }
   }
 }
@@ -57,7 +67,7 @@ body:has(.publications) .container {
 // Profile
 .profile {
   img {
-    width: 75%;
+    width: 85%;
   }
 }
 

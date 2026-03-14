@@ -10,8 +10,9 @@
   --global-code-bg-color: #{$code-bg-color-light};
   --global-text-color: #{$black-color};
   --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$blue-color-dark};
-  --global-hover-color: #{$blue-color-dark};
+  --global-cyan-green-color: #{$cyan-green-color};
+  --global-theme-color: #{$blue-color-light};
+  --global-hover-color: #{$light-point-color};
   --nav-hover-color: #{$light-point-color};
   --nav-hover-text-color: #{$light-point-color};
   --global-accent-color: #{$purple-color};
@@ -85,6 +86,7 @@ html[data-theme="dark"] {
   --global-code-bg-color: #{$code-bg-color-dark};
   --global-text-color: #{$grey-color-light};
   --global-text-color-light: #{$grey-color};
+  --global-cyan-green-color: #{$cyan-green-color};
   --global-theme-color: #{$light-point-color};
   --global-hover-color: #{$light-point-color};
   --nav-hover-color: #{$light-point-color};
