@@ -266,6 +266,45 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+.ongoing-projects {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--global-divider-color);
+
+  .section-title {
+    margin-bottom: 0.75rem;
+  }
+
+  .ongoing-project-item {
+    margin-bottom: 1.25rem;
+  }
+
+  .ongoing-project-item-title {
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: var(--global-theme-color);
+    margin-bottom: 0.5rem;
+  }
+
+  .ongoing-project-item-desc {
+    font-size: 0.95rem;
+    color: var(--global-text-color);
+    line-height: 1.55;
+    margin-bottom: 1rem;
+  }
+}
+
+.selected-publications {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--global-divider-color);
+
+  .section-title {
+    margin-bottom: 1rem;
+  }
+}
+
 // Navbar customization
 
 .navbar {

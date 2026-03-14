@@ -47,6 +47,23 @@ layout: default
 
     <div class="about-bio clearfix">{{ content }}</div>
 
+    {% if page.ongoing_projects and page.ongoing_projects.items.size > 0 %}
+    <section class="ongoing-projects">
+      <h2 class="section-title">
+        <div style="height: 0.8em;"></div>
+        <span style="color:rgb(55, 61, 74)">{{ page.ongoing_projects.title }}</span>
+      </h2>
+      {% for item in page.ongoing_projects.items %}
+      <div class="ongoing-project-item">
+        <h3 class="ongoing-project-item-title">{{ item.title }}</h3>
+        {% if item.description %}
+        <p class="ongoing-project-item-desc">{{ item.description }}</p>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </section>
+    {% endif %}
+
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>
@@ -63,13 +80,14 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %}
 
-    <!-- Selected papers -->
     {% if page.selected_papers %}
-      <h2>
+    <section class="selected-publications">
+      <h2 class="section-title">
         <div style="height: 0.8em;"></div>
         <a href="{{ '/publications/' | relative_url }}" style="color:rgb(55, 61, 74)">Selected publications</a>
       </h2>
       {% include selected_papers.liquid %}
+    </section>
     {% endif %}
 
     <!-- Social icons moved to header area -->

@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: M.S. candidate at KAIST
+subtitle: M.S. student at KAIST
 
 profile:
   align: right
@@ -15,6 +15,12 @@ research_interest:
     - Mechanistic interpretability of LLMs
     - Efficient sequence modeling with state space models and linear attention
     - Representation learning for input-network functional specialization
+
+ongoing_projects:
+  title: Ongoing Projects
+  items:
+    - title: Understanding attention failure through spectral regimes
+      description: "My current project investigates whether different modes of model failures correspond to distinct spectral regimes of attention, rather than a single pathology. Using a Gaussian equivalent null model for attention, we analyze diffuse versus structured failure patterns through random matrix theory (RMT)."
 
 news: true  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
