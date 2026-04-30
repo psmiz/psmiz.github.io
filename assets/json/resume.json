@@ -112,13 +112,13 @@
   "publications": [
     {
       "name": "Q-Delta: Beyond Key–Value Associative State Evolution",
-      "publisher": "In Review",
+      "publisher": "ICML 2026",
       "releaseDate": "2026",
       "authors": "Sumin Park, Seojin Kim, Noseong Park"
     },
     {
       "name": "STAR: Rethinking MoE Routing as Structure-Aware Subspace Learning",
-      "publisher": "In Review",
+      "publisher": "ICML 2026",
       "releaseDate": "2026",
       "authors": "Sumin Park, Noseong Park"
     },
