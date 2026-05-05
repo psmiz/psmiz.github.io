@@ -64,6 +64,26 @@ layout: default
     </section>
     {% endif %}
 
+    {% if page.news_section and page.news_section.items.size > 0 %}
+    <section class="news-section">
+      <h2 class="section-title">
+        <div style="height: 0.8em;"></div>
+        <span style="color:rgb(55, 61, 74)">{{ page.news_section.title }}</span>
+      </h2>
+      <ul class="news-list">
+        {% for item in page.news_section.items %}
+        <li class="news-item">
+          <div class="news-date">{{ item.date }}</div>
+          <div class="news-body">
+            {% if item.tag %}<span class="news-tag">{{ item.tag }}</span>{% endif %}
+            <span class="news-desc">{{ item.description | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>

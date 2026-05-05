@@ -16,11 +16,23 @@ research_interest:
     - Efficient sequence modeling with state space models and linear attention
     - Representation learning for input-network functional specialization
 
-ongoing_projects:
+# NOTE: prefix the key with `_` to hide a section without deleting it.
+# Rename back to `ongoing_projects` to make it visible again.
+_ongoing_projects:
   title: Ongoing Projects
   items:
     - title: Understanding attention failures through spectral regimes
       description: "My current project investigates whether different modes of model failures correspond to distinct spectral regimes of attention, rather than a single pathology. Using a Gaussian-equivalent null model for attention, we analyze diffuse versus structured failure patterns through random matrix theory (RMT)."
+
+news_section:
+  title: News
+  items:
+    - date: "Jun – Dec 2026"
+      tag: "Research Internship"
+      description: "Joining the [Computational Applied Mathematics & AI Lab (CAMAIL)](https://camail.org/) at **MPI-IS / ELLIS Institute Tübingen** as a research intern, advised by **T. Konstantin Rusch**, for the research project on linear recurrent sequence models."
+    - date: "Jul 2026"
+      tag: "ICML 2026 Conference"
+      description: "Attending ICML 2026 (Jul 6&ndash;11) to present two works &mdash; ***Q-Delta*** and ***STAR***."
 
 news: true  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
