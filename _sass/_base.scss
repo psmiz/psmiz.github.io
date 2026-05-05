@@ -2,6 +2,14 @@
  * Styles for the base elements of the theme.
  ******************************************************************************/
 
+// Global layout scale.
+// Every `rem` in the codebase resolves to (browser default × this %),
+// so changing this single value rescales fonts, paddings, margins and any
+// rem-based image / element sizes proportionally.
+html {
+  font-size: 91%;
+}
+
 // Typography
 
 p,

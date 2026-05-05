@@ -29,10 +29,10 @@ news_section:
   items:
     - date: "Jun – Dec 2026"
       tag: "Research Internship"
-      description: "Joining the [Computational Applied Mathematics & AI Lab (CAMAIL)](https://camail.org/) at **MPI-IS / ELLIS Institute Tübingen** as a research intern, advised by **T. Konstantin Rusch**, for the research project on linear recurrent sequence models."
+      description: "Joining the [Computational Applied Mathematics & AI Lab (CAMAIL)](https://camail.org/) at the **ELLIS Institute Tübingen** and **Max Planck Institute for Intelligent Systems** as a research intern, advised by **T. Konstantin Rusch**, for the research project on linear recurrent sequence models."
     - date: "Jul 2026"
-      tag: "ICML 2026 Conference"
-      description: "Attending ICML 2026 (Jul 6&ndash;11) to present two works &mdash; ***Q-Delta*** and ***STAR***."
+      tag: "ICML Conference"
+      description: "Attending ICML 2026 (Jul 6&ndash;11) in Korea to present two works, ***Q-Delta*** and ***STAR***."
 
 news: true  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
