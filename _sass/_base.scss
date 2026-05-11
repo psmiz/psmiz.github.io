@@ -331,9 +331,11 @@ ul.task-list input[type="checkbox"] {
 .about-sidebar {
   // Active accent + hover background tokens (scoped to the sidebar so the
   // site's global theme color is unchanged).
-  // Match the publication keyword-tag accent (now peach/light orange).
+  // Mirror the global sub-point accent (cyan-green in light/forest,
+  // peach in dark/sunset). The hover wash comes from --global-sub-point-hover-bg
+  // which is defined per-theme in _themes.scss.
   --about-sidebar-accent: var(--global-sub-point-color);
-  --about-sidebar-hover-bg: rgba(232, 176, 153, 0.18);
+  --about-sidebar-hover-bg: var(--global-sub-point-hover-bg);
 
   position: fixed;
   top: 6rem;
@@ -676,6 +678,22 @@ ul.task-list input[type="checkbox"] {
   &:hover {
     color: var(--global-hover-color);
   }
+}
+
+// Palette emoji shown right next to the theme toggle in the navbar.
+.palette-emoji-container {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-right: 0.15rem;
+  user-select: none;
+}
+
+.palette-emoji {
+  font-size: 1rem;
+  line-height: 1;
+  display: inline-block;
+  transform: translateY(-1px); // optical alignment with the toggle icon
 }
 
 // Social (bottom)

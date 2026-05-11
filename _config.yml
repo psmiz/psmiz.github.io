@@ -58,7 +58,7 @@ max_width: 790px
 
 # Site palette: "sunset" (purple point + peach sub-point, default dark mode)
 #               "forest" (blue point + cyan-green sub-point, default light mode)
-palette: sunset
+palette: forest
 
 # TODO: add layout settings (single page vs. multi-page)
 

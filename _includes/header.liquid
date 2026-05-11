@@ -126,6 +126,11 @@
             </li>
           {% endif %}
           {% if site.enable_darkmode %}
+            {% assign initial_palette_emoji = '🌲' %}
+            {% if site.palette == 'sunset' %}{% assign initial_palette_emoji = '🌅' %}{% endif %}
+            <li class="palette-emoji-container" aria-hidden="true">
+              <span id="palette-emoji" class="palette-emoji">{{ initial_palette_emoji }}</span>
+            </li>
             <!-- Toogle theme mode -->
             <li class="toggle-container">
               <button id="light-toggle" title="Change theme">

@@ -4,48 +4,38 @@
  ******************************************************************************/
 
 @use "sass:color";
-@use "sass:map";
 
 // =============================================================================
-// SITE PALETTE PRESETS
+// SITE PALETTES
 // -----------------------------------------------------------------------------
-// Two named color palettes are bundled. Switch the whole site by editing
-// `palette:` in _config.yml (canonical source). That value is injected here
-// via assets/css/main.scss and also drives the default light/dark mode via
-// _layouts/default.liquid → <html data-default-theme="..."> → theme.js.
-//
-//   forest  – original blue point color + cyan-green sub-point (default: light)
-//   sunset  – purple point color + peach/light-orange sub-point (default: dark)
+// Two named palettes are bound to the light/dark modes (see _themes.scss):
+//   forest – blue point + cyan-green sub-point. Applied in LIGHT mode.
+//   sunset – purple point + peach/light-orange sub-point. Applied in DARK mode.
+// The favicon also swaps between 🌲 (forest/light) and 🌅 (sunset/dark).
 // =============================================================================
 
-$active-palette: "sunset" !default;  // "forest" or "sunset"
+$forest-blue-color-dark: #29488d;
+$forest-blue-color-light: #4f68ce;
+$forest-light-point-color: #5681de;
+$forest-sub-point-color: #5bc5c5;
 
-$palette-forest: (
-  blue-color-dark: #29488d,   // publication year on selected-paper cards
-  blue-color-light: #4f68ce,  // light-theme --global-theme-color
-  light-point-color: #5681de, // dark-theme --global-theme-color / nav hover
-  sub-point-color: #5bc5c5,   // subtitle, keyword tags, sidebar accent
-);
+$sunset-blue-color-dark: #4d2459;
+$sunset-blue-color-light: #5b2c6f;
+$sunset-light-point-color: #b05798;
+$sunset-sub-point-color: #e8b099;
 
-$palette-sunset: (
-  blue-color-dark: #4d2459,
-  blue-color-light: #5b2c6f,
-  light-point-color: #b05798,
-  sub-point-color: #e8b099,
-);
-
-$_palette: if($active-palette == "forest", $palette-forest, $palette-sunset);
-
-// Color
+// Colors
 $red-color: #ff3636 !default;
 $red-color-dark: #b71c1c !default;
 $orange-color: #f29105 !default;
 $blue-color: #0076df !default;
-$blue-color-dark: map.get($_palette, "blue-color-dark") !default;
-$blue-color-light: map.get($_palette, "blue-color-light") !default;
-$light-point-color: map.get($_palette, "light-point-color") !default;
+// Aliases default to the forest palette for any SCSS-time computations.
+// Per-theme overrides live in _themes.scss using the $forest-* / $sunset-* vars.
+$blue-color-dark: $forest-blue-color-dark !default;
+$blue-color-light: $forest-blue-color-light !default;
+$light-point-color: $forest-light-point-color !default;
 $cyan-color: #2bd0dc !default;
-$sub-point-color: map.get($_palette, "sub-point-color") !default;
+$sub-point-color: $forest-sub-point-color !default;
 $light-cyan-color: color.adjust($cyan-color, $lightness: 25%);
 $green-color: #00ab37 !default;
 $green-color-lime: #b7d12a !default;

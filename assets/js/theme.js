@@ -21,6 +21,21 @@ let setThemeSetting = (themeSetting) => {
   applyTheme();
 };
 
+// Swap the favicon AND the navbar emoji indicator to match the active theme.
+//   light  → 🌲 (forest palette)
+//   dark   → 🌅 (sunset palette)
+let setPaletteEmoji = (theme) => {
+  let emoji = theme === "dark" ? "\uD83C\uDF05" : "\uD83C\uDF32";
+  let href =
+    "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>" +
+    emoji +
+    "</text></svg>";
+  let link = document.getElementById("favicon");
+  if (link) link.setAttribute("href", href);
+  let badge = document.getElementById("palette-emoji");
+  if (badge) badge.textContent = emoji;
+};
+
 // Apply the computed dark or light theme to the website.
 let applyTheme = () => {
   let theme = determineComputedTheme();
@@ -29,6 +44,7 @@ let applyTheme = () => {
   setHighlight(theme);
   setGiscusTheme(theme);
   setSearchTheme(theme);
+  setPaletteEmoji(theme);
 
   // if mermaid is not defined, do nothing
   if (typeof mermaid !== "undefined") {
@@ -291,6 +307,10 @@ let initTheme = () => {
     mode_toggle.addEventListener("click", function () {
       toggleThemeSetting();
     });
+
+    // Re-apply the palette emoji now that the navbar (which lives in <body>)
+    // exists in the DOM — theme.js itself runs in <head> on first paint.
+    setPaletteEmoji(determineComputedTheme());
   });
 
   // Add event listener to the system theme preference change.
