@@ -313,6 +313,20 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// Shared style for about-page section titles (News, Selected publications, …).
+// Use the theme text color so it stays readable in both light and dark modes.
+.section-title,
+.section-title > span,
+.section-title > a {
+  color: var(--global-text-color);
+  text-decoration: none;
+}
+
+.section-title > a:hover {
+  color: var(--global-hover-color);
+  text-decoration: none;
+}
+
 // Scroll-spy sidebar shown next to the about page (Intro / News / Publications).
 .about-sidebar {
   // Active accent + hover background tokens (scoped to the sidebar so the

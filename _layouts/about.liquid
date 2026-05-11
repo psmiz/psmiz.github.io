@@ -53,7 +53,7 @@ layout: default
     <section class="ongoing-projects">
       <h2 class="section-title">
         <div style="height: 0.8em;"></div>
-        <span style="color:rgb(55, 61, 74)">{{ page.ongoing_projects.title }}</span>
+        <span>{{ page.ongoing_projects.title }}</span>
       </h2>
       {% for item in page.ongoing_projects.items %}
       <div class="ongoing-project-item">
@@ -70,7 +70,7 @@ layout: default
     <section id="news" class="news-section">
       <h2 class="section-title">
         <div style="height: 0.8em;"></div>
-        <span style="color:rgb(55, 61, 74)">{{ page.news_section.title }}</span>
+        <span>{{ page.news_section.title }}</span>
       </h2>
       <ul class="news-list">
         {% for item in page.news_section.items %}
@@ -106,7 +106,7 @@ layout: default
     <section id="publications" class="selected-publications">
       <h2 class="section-title">
         <div style="height: 0.8em;"></div>
-        <a href="{{ '/publications/' | relative_url }}" style="color:rgb(55, 61, 74)">Selected publications</a>
+        <a href="{{ '/publications/' | relative_url }}">Selected publications</a>
       </h2>
       {% include selected_papers.liquid %}
     </section>
