@@ -331,9 +331,9 @@ ul.task-list input[type="checkbox"] {
 .about-sidebar {
   // Active accent + hover background tokens (scoped to the sidebar so the
   // site's global theme color is unchanged).
-  // Match the publication keyword-tag accent (cyan-green).
-  --about-sidebar-accent: var(--global-cyan-green-color);
-  --about-sidebar-hover-bg: rgba(91, 197, 197, 0.12);
+  // Match the publication keyword-tag accent (now peach/light orange).
+  --about-sidebar-accent: var(--global-sub-point-color);
+  --about-sidebar-hover-bg: rgba(232, 176, 153, 0.18);
 
   position: fixed;
   top: 6rem;
@@ -1274,9 +1274,9 @@ footer.sticky-bottom {
   }
 
   .selected-paper-tag--keyword {
-    color: var(--global-cyan-green-color);
+    color: var(--global-sub-point-color);
     background-color: transparent;
-    border: 1px solid var(--global-cyan-green-color);
+    border: 1px solid var(--global-sub-point-color);
   }
 
   .selected-paper-authors {

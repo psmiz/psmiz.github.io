@@ -1,5 +1,7 @@
 <!doctype html>
-<html lang="{{ site.lang }}">
+{% assign default_theme = 'light' %}
+{% if site.palette == 'sunset' %}{% assign default_theme = 'dark' %}{% endif %}
+<html lang="{{ site.lang }}" data-default-theme="{{ default_theme }}">
   <!-- Head -->
   <head>
     {% if page.redirect %}

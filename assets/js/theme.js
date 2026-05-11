@@ -251,22 +251,29 @@ let transTheme = () => {
   }, 500);
 };
 
+// Default theme is set on <html data-default-theme="..."> by the layout, which
+// in turn reads `palette` from _config.yml (sunset → "dark", forest → "light").
+let getDefaultTheme = () => {
+  let attr = document.documentElement.getAttribute("data-default-theme");
+  return attr === "dark" ? "dark" : "light";
+};
+
 // Determine the expected state of the theme toggle, which can be "dark", "light", or
-// "system". Default is "light". 
+// "system". Default follows the active palette.
 let determineThemeSetting = () => {
   let themeSetting = localStorage.getItem("theme");
   if (themeSetting != "dark" && themeSetting != "light" && themeSetting != "system") {
-    themeSetting = "light";
+    themeSetting = getDefaultTheme();
   }
   return themeSetting;
 };
 
 // Determine the computed theme, which can be "dark" or "light". If the theme setting is
-// "system", default to dark mode.
+// "system", default follows the active palette.
 let determineComputedTheme = () => {
   let themeSetting = determineThemeSetting();
   if (themeSetting == "system") {
-    return "light";
+    return getDefaultTheme();
   } else {
     return themeSetting;
   }

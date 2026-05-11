@@ -6,6 +6,9 @@
 // Dimensions
 $max-content-width: {{ site.max_width }};
 
+// Palette switch (controlled from _config.yml: `palette: forest|sunset`).
+$active-palette: "{{ site.palette | default: 'sunset' }}";
+
 @import
   "variables",
   "themes",
