@@ -318,7 +318,7 @@ ul.task-list input[type="checkbox"] {
   // Active accent + hover background tokens (scoped to the sidebar so the
   // site's global theme color is unchanged).
   --about-sidebar-accent: #f4a261; // light orange
-  --about-sidebar-hover-bg: rgba(0, 0, 0, 0.04); // very light gray
+  --about-sidebar-hover-bg: rgba(244, 162, 97, 0.12); // light orange wash
 
   position: fixed;
   top: 6rem;
