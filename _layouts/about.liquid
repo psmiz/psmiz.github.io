@@ -45,7 +45,9 @@ layout: default
       </div>
     {% endif %}
 
-    <div class="about-bio clearfix">{{ content }}</div>
+    {% include about_sidebar.liquid %}
+
+    <div id="intro" class="about-bio clearfix">{{ content }}</div>
 
     {% if page.ongoing_projects and page.ongoing_projects.items.size > 0 %}
     <section class="ongoing-projects">
@@ -65,7 +67,7 @@ layout: default
     {% endif %}
 
     {% if page.news_section and page.news_section.items.size > 0 %}
-    <section class="news-section">
+    <section id="news" class="news-section">
       <h2 class="section-title">
         <div style="height: 0.8em;"></div>
         <span style="color:rgb(55, 61, 74)">{{ page.news_section.title }}</span>
@@ -101,7 +103,7 @@ layout: default
     {% endif %}
 
     {% if page.selected_papers %}
-    <section class="selected-publications">
+    <section id="publications" class="selected-publications">
       <h2 class="section-title">
         <div style="height: 0.8em;"></div>
         <a href="{{ '/publications/' | relative_url }}" style="color:rgb(55, 61, 74)">Selected publications</a>
