@@ -173,3 +173,50 @@ html[data-theme-setting="light"] {
     display: block;
   }
 }
+
+// =============================================================================
+// Forest-on-dark override — opt-in via <html data-palette="forest">.
+// When forest is the active palette, dark mode also uses forest colors instead
+// of the default sunset bindings. Sunset definitions above remain untouched.
+// =============================================================================
+
+html[data-palette="forest"][data-theme="dark"] {
+  --global-sub-point-color: #{$forest-sub-point-color};
+  --global-sub-point-color-strong: #{color.adjust($forest-sub-point-color, $lightness: -14%)};
+  --global-sub-point-hover-bg: #{rgba($forest-sub-point-color, 0.18)};
+  --global-theme-color: #{$forest-light-point-color};
+  --global-hover-color: #{$forest-light-point-color};
+  --nav-hover-color: #{$forest-light-point-color};
+  --nav-hover-text-color: #{$forest-light-point-color};
+  --global-accent-color: #{$forest-light-point-color};
+}
+
+// =============================================================================
+// Oxford palette overrides — opt-in via <html data-palette="oxford">.
+// Activated by setting `palette: oxford` in _config.yml. Leaves forest (light)
+// and sunset (dark) bindings above untouched so any palette can be swapped in.
+// =============================================================================
+
+html[data-palette="oxford"] {
+  // Light mode → Oxford Blue point + burgundy sub.
+  --global-sub-point-color: #{$oxford-sub-point-color};
+  --global-sub-point-color-strong: #{color.adjust($oxford-sub-point-color, $lightness: -10%)};
+  --global-sub-point-hover-bg: #{rgba($oxford-sub-point-color, 0.15)};
+  --global-theme-color: #{$oxford-light-point-color};
+  --global-hover-color: #{$oxford-light-point-color};
+  --nav-hover-color: #{$oxford-light-point-color};
+  --nav-hover-text-color: #{$oxford-light-point-color};
+  --global-accent-color: #{$oxford-light-point-color};
+}
+
+html[data-palette="oxford"][data-theme="dark"] {
+  // Dark mode → lightened slate-blue point + rose burgundy sub.
+  --global-sub-point-color: #{$oxford-dark-sub-point-color};
+  --global-sub-point-color-strong: #{$oxford-dark-sub-point-color};
+  --global-sub-point-hover-bg: #{rgba($oxford-dark-sub-point-color, 0.18)};
+  --global-theme-color: #{$oxford-dark-point-color};
+  --global-hover-color: #{$oxford-dark-point-color};
+  --nav-hover-color: #{$oxford-dark-point-color};
+  --nav-hover-text-color: #{$oxford-dark-point-color};
+  --global-accent-color: #{$oxford-dark-point-color};
+}

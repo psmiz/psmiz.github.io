@@ -128,6 +128,7 @@
           {% if site.enable_darkmode %}
             {% assign initial_palette_emoji = '🌲' %}
             {% if site.palette == 'sunset' %}{% assign initial_palette_emoji = '🌅' %}{% endif %}
+            {% if site.palette == 'oxford' %}{% assign initial_palette_emoji = '📕' %}{% endif %}
             <li class="palette-emoji-container" aria-hidden="true">
               <span id="palette-emoji" class="palette-emoji">{{ initial_palette_emoji }}</span>
             </li>

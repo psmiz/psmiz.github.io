@@ -59,12 +59,16 @@
 {% endif %}
 
 {% comment %}
-  Theme-aware favicon: 🌲 for light (forest), 🌅 for dark (sunset).
-  Initial value is set from <html data-default-theme="..."> so the right icon
+  Theme-aware favicon. Pairs by palette × mode:
+    forest → 🌲 (light) / 🌅 (dark)   [legacy: forest itself uses 🌲]
+    sunset → 🌲 (light) / 🌅 (dark)   [legacy: sunset itself uses 🌅]
+    oxford → 📕 (both modes — burgundy is the main color in light and dark)
+  Initial value is set from `site.palette` × `default_theme` so the right icon
   ships in the HTML; theme.js updates the href on every theme toggle.
 {% endcomment %}
 {% assign initial_favicon = '🌲' %}
 {% if site.palette == 'sunset' %}{% assign initial_favicon = '🌅' %}{% endif %}
+{% if site.palette == 'oxford' %}{% assign initial_favicon = '📕' %}{% endif %}
 
 <link
   id="favicon"

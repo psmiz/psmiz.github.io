@@ -57,7 +57,8 @@ bib_search: true
 max_width: 790px
 
 # Site palette: "sunset" (purple point + peach sub-point, default dark mode)
-#               "forest" (blue point + cyan-green sub-point, default light mode)
+#               "forest" (blue point + cyan-green sub-point, both modes when selected)
+#               "oxford" (Oxford Blue point + burgundy sub-point, both modes when selected)
 palette: forest
 
 # TODO: add layout settings (single page vs. multi-page)

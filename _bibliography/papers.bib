@@ -8,11 +8,9 @@
       booktitle={International Conference on Machine Learning (ICML)},
       archivePrefix={arXiv},
       primaryClass={cs.LG},
-      abstract={Linear attention reformulates sequence modeling as recurrent state evolution, enabling efficient linear-time inference. 
-      Under the key–value associative paradigm, existing approaches restrict the role of the query to the readout operation, decoupling it from state evolution. We show that query-conditioned state readout induces a structured value prediction over accumulated memory that complements key-based retrieval.
-      Based on this insight, we propose {Q-Delta}, a query-aware delta rule that integrates mixed key--query prediction errors into state evolution, enabling jointly corrective dynamics while preserving delta-rule efficiency. We establish stability guarantees for the resulting dynamics and derive a hardware-efficient chunkwise-parallel formulation with a custom Triton implementation.
-      Empirical results demonstrate stable optimization, competitive throughput, and consistent improvements over strong baselines on language modeling and long-context retrieval tasks.},
+      abstract={Linear attention reformulates sequence modeling as recurrent state evolution, enabling efficient linear-time inference. Under the key–value associative paradigm, existing approaches restrict the role of the query to the readout operation, decoupling it from state evolution. We show that query-conditioned state readout induces a structured value prediction over accumulated memory that complements key-based retrieval. Based on this insight, we propose Q-Delta, a query-aware delta rule that integrates mixed key–query prediction errors into state evolution, enabling jointly corrective dynamics while preserving delta-rule efficiency. We establish stability guarantees for the resulting dynamics and derive a hardware-efficient chunkwise-parallel formulation with a custom Triton implementation. Empirical results demonstrate stable optimization, competitive throughput, and consistent improvements over strong baselines on language modeling and long-context retrieval tasks. Code is available at https://github.com/psmiz/Q-Delta.},
       url={},
+      code={https://github.com/psmiz/Q-Delta},
       preview={qdelta.png},
       summary={Query-aware delta rule for linear attention that uses mixed key--query prediction errors, enabling richer, jointly corrective state evolution dynamics},
       tags={Linear Attention, SSMs, LLMs},
@@ -27,24 +25,9 @@
       booktitle={International Conference on Machine Learning (ICML)},
       archivePrefix={arXiv},
       primaryClass={cs.LG},
-      abstract={Mixture-of-Experts (MoE) scales model capacity
-      efficiently by selectively routing inputs to a specialized subset of experts. However, input-expert
-      specialization, the core motivation of MoE, critically depends on whether the router is actually
-      aware of input structure. In practice, MoE routing is typically implemented as a shallow linear
-      projection with limited awareness of input representation, which often leads to unstable and
-      suboptimal specialization. We propose STAR, a
-      STructure-Aware Routing that rethinks MoE routing as a subspace learning problem by augmenting
-      standard learnable routing with an evolving principal subspace that tracks dominant input structure via Generalized Hebbian Algorithm (GHA).
-      By aligning routing decisions directly with input
-      structure along with the task-supervision from
-      learnable gate, STAR enables stable and balanced
-      expert specialization without relying on auxiliary
-      load-balancing losses. We evaluate STAR on controlled synthetic setup and large-scale language
-      and vision tasks, where it consistently improves
-      routing quality and downstream performance over
-      strong MoE baselines. Moreover, optional testtime subspace updates further enhance routing
-      robustness under distribution shifts.},
-      url={}, 
+      abstract={Mixture-of-Experts (MoE) scales model capacity efficiently by selectively routing inputs to a specialized subset of experts. However, input-expert specialization, the core motivation of MoE, critically depends on whether the router is actually aware of input structure. In practice, MoE routing is typically implemented as a shallow linear projection with limited awareness of input representation, which often leads to unstable routing. We propose STAR, a Structure-Aware Routing that rethinks MoE routing as a subspace learning problem by augmenting standard learnable routing with an evolving principal subspace that tracks dominant input structure via Generalized Hebbian Algorithm (GHA). By aligning routing decisions directly with input structure, STAR enables stable expert specialization. We evaluate STAR on controlled synthetic setup and large-scale language and vision tasks, where it consistently improves routing quality and downstream performance over strong MoE baselines. Moreover, optional test-time subspace updates further enhance routing robustness and generalization under input distribution shifts. Code is available at https://github.com/psmiz/STAR.},
+      url={},
+      code={https://github.com/psmiz/STAR},
       preview={star.png},
       summary={Input-aware MoE routing based on incremental subspace learning for evolving input representation},
       tags={MoE, Representation, LLMs},

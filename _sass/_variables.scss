@@ -8,10 +8,13 @@
 // =============================================================================
 // SITE PALETTES
 // -----------------------------------------------------------------------------
-// Two named palettes are bound to the light/dark modes (see _themes.scss):
-//   forest – blue point + cyan-green sub-point. Applied in LIGHT mode.
-//   sunset – purple point + peach/light-orange sub-point. Applied in DARK mode.
-// The favicon also swaps between 🌲 (forest/light) and 🌅 (sunset/dark).
+// Named palettes are bound to the light/dark modes via _themes.scss. The active
+// palette is selected by `palette:` in _config.yml; the bindings below stay
+// available so any palette can be re-wired in without redefining colors.
+//   forest – blue point + cyan-green sub-point.
+//   sunset – purple point + peach/light-orange sub-point.
+//   oxford – Oxford Blue point + burgundy sub-point (active default).
+// The favicon swaps with the active palette × mode (see theme.js / head.liquid).
 // =============================================================================
 
 $forest-blue-color-dark: #29488d;
@@ -23,6 +26,16 @@ $sunset-blue-color-dark: #4d2459;
 $sunset-blue-color-light: #5b2c6f;
 $sunset-light-point-color: #b05798;
 $sunset-sub-point-color: #e8b099;
+
+// Oxford – classic academic. Burgundy point + Oxford-Blue sub-point.
+// Light variant: lifted (not too dark) burgundy as main, navy as accent.
+// Dark variant: rose-burgundy point + slate-blue sub on dark bg.
+$oxford-blue-color-dark: #1a3a6c;
+$oxford-blue-color-light: #3d5a8a;
+$oxford-light-point-color: #9b2c3f; // light mode point (burgundy, main)
+$oxford-sub-point-color: #2e4a7a; // light mode sub-point (Oxford navy)
+$oxford-dark-point-color: #d97a8c; // dark mode point (rose burgundy, main)
+$oxford-dark-sub-point-color: #8aa6d9; // dark mode sub-point (light slate-blue)
 
 // Colors
 $red-color: #ff3636 !default;
