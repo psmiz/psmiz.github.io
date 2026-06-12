@@ -26,8 +26,8 @@ _ongoing_projects:
 
 news_section:
   title: News
-items:
-    - date: "Jun – Dec 2026"
+  items:
+    - date: "July – Dec 2026"
       tag: "Research Internship"
       description: "Joining the [Computational Applied Mathematics & AI Lab (CAMAIL)](https://camail.org/) at the **ELLIS Institute Tübingen** and **Max Planck Institute for Intelligent Systems** as a research intern, advised by **T. Konstantin Rusch**, for the research project on linear recurrent sequence models."
     - date: "Jul 2026"
