@@ -30,7 +30,7 @@
       "studyType": "M.S.",
       "startDate": "2024-09",
       "endDate": "Present",
-      "score": "4.18 / 4.30"
+      "score": "4.17 / 4.30"
     },
     {
       "institution": "Ewha Womans University",
@@ -39,18 +39,32 @@
       "studyType": "B.S.",
       "startDate": "2016-03",
       "endDate": "2021-02",
-      "score": "4.07 / 4.30 (Summa Cum Laude)"
+      "score": "4.07 / 4.30 (Summa Cum Laude)",
+      "courses": [
+        "Thesis: Differential Mechanism of Positive and Negative Valence Representation: A Focus on Amygdalar Circuitry"
+      ]
     }
   ],
 
   "work": [
+    {
+      "name": "CAMAIL, Max Planck Institute for Intelligent Systems / ELLIS Institute Tübingen",
+      "position": "Research Intern",
+      "location": "Tübingen, Germany",
+      "startDate": "2026-07",
+      "endDate": "2026-12",
+      "summary": "Research on blockwise parallelizable linear recurrences for efficient sequence modeling.",
+      "highlights": [
+        "Advisor: T. Konstantin Rusch"
+      ]
+    },
     {
       "name": "Big Data Analysis & Learning Laboratory (BigDyL), KAIST",
       "position": "Master’s Student Researcher",
       "location": "Daejeon, South Korea",
       "startDate": "2024-09",
       "endDate": "Present",
-      "summary": "Research on LLM architectures, representation learning, explainable LLMs, and brain-inspired AI.",
+      "summary": "Research on interpretable LLM architectures, state-space models (SSMs), mixture-of-experts (MoE), representation learning, and brain-inspired AI.",
       "highlights": [
         "Advisor: Noseong Park"
       ]
@@ -61,7 +75,7 @@
       "location": "Seoul, South Korea",
       "startDate": "2023-07",
       "endDate": "2024-08",
-      "summary": "Research on graph representation learning and graph neural networks.",
+      "summary": "Research on graph representation learning and graph neural networks (GNN).",
       "highlights": [
         "Advisor: Noseong Park"
       ]
@@ -80,7 +94,7 @@
       "location": "Seoul, South Korea",
       "startDate": "2020-08",
       "endDate": "2021-01",
-      "summary": "Research on PFC-involved systems consolidation via electrophyisology.",
+      "summary": "Research on electrophysiology and PFC-involved systems consolidation.",
       "highlights": [
         "Advisor: Seokho Lee"
       ]
@@ -91,20 +105,9 @@
       "location": "Seoul, South Korea",
       "startDate": "2019-12",
       "endDate": "2020-02",
-      "summary": "Research on dopaminergic reward circuitry.",
+      "summary": "Molecular analysis on dopaminergic reward circuitry.",
       "highlights": [
         "Advisor: Bongkiun Kaang"
-      ]
-    },
-    {
-      "name": "Molecular Neuroscience Laboratory, POSTECH",
-      "position": "Undergraduate Research Intern",
-      "location": "Seoul, South Korea",
-      "startDate": "2019-09",
-      "endDate": "2019-07",
-      "summary": "Research on extinction of cocaine-context association memory.",
-      "highlights": [
-        "Advisor: Junghun Kim"
       ]
     }
   ],
@@ -159,6 +162,50 @@
         "ViT with hierarchical attention for high-resolution processing",
         "Achieved 99.41% classification accuracy"
       ]
+    }
+  ],
+
+  "awards": [
+    {
+      "title": "Summa Cum Laude",
+      "date": "2020",
+      "awarder": "Ewha Womans University"
+    },
+    {
+      "title": "Dean’s List (7 semesters)",
+      "date": "2016 – 2020",
+      "awarder": "Ewha Womans University"
+    },
+    {
+      "title": "Academic Honors Scholarship",
+      "date": "Spring 2020",
+      "awarder": "Ewha Womans University"
+    },
+    {
+      "title": "Global Leader in Major",
+      "date": "Spring 2020",
+      "awarder": "Ewha Womans University"
+    },
+    {
+      "title": "Academic Honors Scholarship",
+      "date": "Spring 2019",
+      "awarder": "Ewha Womans University"
+    },
+    {
+      "title": "Admissions Scholarship (Full Tuition, 2 Years)",
+      "date": "2016 – 2018",
+      "awarder": "Ewha Womans University"
+    }
+  ],
+
+  "skills": [
+    {
+      "name": "Programming & Frameworks",
+      "keywords": ["Python", "R", "C++", "PyTorch", "Triton"]
+    },
+    {
+      "name": "Systems & Tools",
+      "keywords": ["Linux", "Git", "Docker", "AWS", "SQL"]
     }
   ]
 }

@@ -2,6 +2,17 @@
  * CV shared styles
  *****************************/
 
+/* On CV pages only, shift the TOC-sidebar/content split from 3+9 to 2+10
+ * so the card area grows without resizing the outer container. */
+.row:has(.cv) > .col-sm-3 {
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+}
+.row:has(.cv) > .col-sm-9 {
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+}
+
 /* Date badge styling - override theme color for date badges */
 .badge.font-weight-bold.danger-color-dark,
 span.badge.danger-color-dark,
