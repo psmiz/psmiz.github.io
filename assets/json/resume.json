@@ -114,6 +114,12 @@
 
   "publications": [
     {
+      "name": "Looped Reasoning Finishes Earlier Than You Think",
+      "publisher": "Preprint",
+      "releaseDate": "2026",
+      "authors": "Sumin Park, T. Konstantin Rusch"
+    },
+    {
       "name": "Q-Delta: Beyond Key–Value Associative State Evolution",
       "publisher": "ICML 2026",
       "releaseDate": "2026",

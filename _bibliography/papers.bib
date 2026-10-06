@@ -1,5 +1,19 @@
 ---
 ---
+@article{park2026qrr,
+      title={Looped Reasoning Finishes Earlier Than You Think},
+      author={Sumin Park and T. Konstantin Rusch},
+      abbr={Under Review},
+      year={2027},
+      journal={Preprint},
+      abstract={Looped reasoning with dynamic depth can be viewed as relaxation toward solution attractors in a learned dynamical landscape. In practice, however, latent trajectories often oscillate, cycle, or drift rather than cleanly converge to stable fixed points. How these non-stationary dynamics contribute to reasoning and constrain convergence remains unclear. We show that slowly decaying oscillatory modes can impose their convergence rate on coupled latent dynamics, creating a bottleneck. Yet damping these modes indiscriminately can disrupt the reasoning computation they support. This tension motivates an architectural approach: introducing rotational degrees of freedom along which symmetry-generated rotational motion leaves the reasoning-relevant quotient dynamics unchanged by construction. We propose QRR (Quotient Recurrent Reasoner), a gauge-equivariant recurrent architecture with an exact per-token phase-rotation symmetry. Motion along these symmetry directions leaves the quotient representation unchanged and is dynamically decoupled from reasoning-relevant dynamics. Empirically, QRR achieves stable and faster convergence to solution roots in quotient space, without forming a dominant slow oscillatory bottleneck, while matching or surpassing recent recurrent reasoning models on Sudoku, Maze, and Mini-ARC.},
+      preview={qrr.png},
+      code={https://github.com/psmiz/QRR},
+      summary={Gauge-equivariant quotient recurrent reasoner (QRR) that decouples rotational symmetry motion from reasoning-relevant quotient dynamics, enabling stable and faster convergence},
+      tags={Looped Reasoning, Quotient Dyanmics, LLMs},
+      selected=true
+}
+
 @inproceedings{park2025qdelta,
       title={Q-Delta: Beyond Key–Value Associative State Evolution},
       author={Sumin Park and Seojin Kim and Noseong Park},
@@ -51,7 +65,7 @@
       code={https://github.com/psmiz/MASS},
       preview={mass.png},
       summary={Adaptive MoE expansion mechanism based on gradient-guided semantic drift signals},
-      tags={MoE},
+      tags={Adaptive MoE, Expert Expansion},
       selected=true
 }
 
@@ -93,7 +107,7 @@
       primaryClass={cs.LG},
       preview={panda.png},
       summary={Expanded width-aware message passing for GNNs to address the over-squashing problem},
-      tags={GNNs},
+      tags={GNNs, Message-Passing},
       pdf={https://arxiv.org/pdf/2406.03671},
       url={https://arxiv.org/abs/2406.03671}, 
       selected=true
