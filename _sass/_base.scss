@@ -349,6 +349,15 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// While the sidebar is visible, nudge the page body right so it doesn't crowd
+// (or, on narrower windows, overlap) the sidebar labels.
+@media (min-width: 1101px) {
+  body:has(.about-sidebar) > .container.mt-5 {
+    margin-left: max(calc((100vw - #{$max-content-width}) / 2 + 1.5rem), 17rem);
+    margin-right: auto;
+  }
+}
+
 .about-sidebar__list {
   list-style: none;
   padding: 0;

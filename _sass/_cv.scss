@@ -13,6 +13,21 @@
   max-width: 83.333333%;
 }
 
+/* Give the date/location column a fixed width wide enough for its content
+ * (e.g. "Daejeon, South Korea" in Space Mono) instead of a 2/12 share that
+ * gets too narrow and lets the text run into the next column. */
+@media (min-width: 768px) {
+  .cv .list-group-item > .row > .date-column {
+    flex: 0 0 8.8em;
+    max-width: 8.8em;
+  }
+  .cv .list-group-item > .row > .date-column + div {
+    flex: 1 1 0;
+    max-width: none;
+    min-width: 0;
+  }
+}
+
 /* Date badge styling - override theme color for date badges */
 .badge.font-weight-bold.danger-color-dark,
 span.badge.danger-color-dark,
