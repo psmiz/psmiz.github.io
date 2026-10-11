@@ -52,8 +52,8 @@
       "position": "Research Intern",
       "location": "Tübingen, Germany",
       "startDate": "2026-07",
-      "endDate": "2026-12",
-      "summary": "Research on blockwise parallelizable linear recurrences for efficient sequence modeling.",
+      "endDate": "Present",
+      "summary": "Research on looped reasoning for adaptive test-time computation and blockwise parallelizable linear recurrences for efficient sequence modeling.",
       "highlights": [
         "Advisor: T. Konstantin Rusch"
       ]
@@ -115,8 +115,8 @@
   "publications": [
     {
       "name": "Looped Reasoning Finishes Earlier Than You Think",
-      "publisher": "Preprint",
-      "releaseDate": "2026",
+      "publisher": "Under Review",
+      "releaseDate": "2027",
       "authors": "Sumin Park, T. Konstantin Rusch"
     },
     {
