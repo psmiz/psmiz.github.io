@@ -14,7 +14,7 @@ research_interest:
   items:
     - Mechanistic interpretability of LLMs
     - Efficient sequence modeling with state space models and linear attention
-    - Representation learning for input-network functional specialization
+    - Latent dynamics and convergence of looped reasoning for efficient test-time scaling
 
 # NOTE: prefix the key with `_` to hide a section without deleting it.
 # Rename back to `ongoing_projects` to make it visible again.
