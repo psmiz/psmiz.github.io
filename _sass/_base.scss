@@ -1111,6 +1111,9 @@ footer.sticky-bottom {
       }
 
       .author {
+        // co-authors in grey (same as the homepage cards); own name (<em>) keeps the text color
+        color: $grey-color;
+
         a {
           border-bottom: 1px dashed var(--global-theme-color);
 
