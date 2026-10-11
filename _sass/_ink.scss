@@ -17,7 +17,7 @@
   display: flex;
   align-items: center;
   gap: 0.85rem;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.14em;
@@ -38,6 +38,12 @@ html[data-palette="ink"] {
   // ---------------------------------------------------------------------------
   body {
     line-height: 1.6;
+  }
+
+  // Homepage only: Space Mono has just 400/700, so a hairline stroke makes the
+  // text a touch heavier.
+  .post.about {
+    -webkit-text-stroke-width: 0.15px;
   }
 
   ::selection {
@@ -226,11 +232,10 @@ html[data-palette="ink"] {
     }
   }
 
-  // Bio text (intro + rest) at the size the site would have with an 80% scale
-  // instead of the global 85%.
+  // Bio text (intro + rest), a bit smaller than body text.
   .about-hero .about-bio,
   .about-bio-rest {
-    font-size: calc(80 / 85 * 1rem);
+    font-size: 0.88rem;
   }
 
   // Rest of the bio (research interests + closing paragraph), full width below the hero.
@@ -370,7 +375,7 @@ html[data-palette="ink"] {
     }
 
     .news-body {
-      font-size: 0.95rem;
+      font-size: 0.88rem; // same size as the bio text
       line-height: 1.65;
     }
 
@@ -458,13 +463,14 @@ html[data-palette="ink"] {
       }
 
       .title {
+        font-size: 0.95rem;
         font-weight: 700;
         line-height: 1.45;
         margin-bottom: 0.15rem;
       }
 
       .author {
-        font-size: 0.9rem;
+        font-size: 0.84rem;
         line-height: 1.5;
         color: var(--global-text-color-light);
 
@@ -486,7 +492,7 @@ html[data-palette="ink"] {
       }
 
       .periodical {
-        font-size: 0.88rem;
+        font-size: 0.84rem;
         line-height: 1.55;
       }
 
@@ -503,6 +509,7 @@ html[data-palette="ink"] {
       }
 
       .hidden p {
+        font-size: 0.84rem;
         margin: 0.15rem 0 0.15rem 0.9rem;
         line-height: 1.6;
         text-align: left;
@@ -682,9 +689,27 @@ html[data-palette="ink"] {
     }
   }
 
+  // CV text sizes, in line with the homepage: entry titles 0.95rem, the rest
+  // 0.88rem. !important beats the inline font-size on the resume templates' h6s.
+  .cv .card .list-group-item > .row > .date-column + div {
+    font-size: 0.88rem;
+
+    h6 {
+      font-size: 0.88rem !important;
+    }
+
+    h6.title.font-weight-bold {
+      font-size: 0.95rem !important;
+    }
+  }
+
+  .cv .table-cv-map td {
+    font-size: 0.88rem;
+  }
+
   // Paper titles in the CV's Publications section: bold, slightly smaller.
   .cv a.anchor#publications + .card h6.title.font-weight-bold {
-    font-size: 0.9rem;
+    font-size: 0.9rem !important;
   }
 
   // CV table-of-contents sidebar.
@@ -831,14 +856,14 @@ html[data-palette="ink"] {
     }
 
     .selected-paper-title {
-      font-size: 1.02rem;
+      font-size: 0.95rem;
       line-height: 1.38;
       margin-bottom: 0.4rem;
       color: var(--global-text-color);
     }
 
     .selected-paper-authors {
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       line-height: 1.5;
       color: var(--global-text-color-light);
 
@@ -858,7 +883,7 @@ html[data-palette="ink"] {
     }
 
     .selected-paper-summary {
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       line-height: 1.55;
       margin-top: 0.5rem;
       margin-bottom: 0.85rem;
