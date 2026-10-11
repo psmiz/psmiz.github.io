@@ -40,13 +40,6 @@ html[data-palette="ink"] {
     line-height: 1.6;
   }
 
-  // Bold text (**…** in markdown) must use 700: the theme asks for 500, which
-  // Space Mono doesn't have, so it silently fell back to regular.
-  strong,
-  b {
-    font-weight: 700;
-  }
-
   // Homepage only: Space Mono has just 400/700, so a hairline stroke makes the
   // text a touch heavier.
   .post.about {
