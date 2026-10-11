@@ -21,7 +21,7 @@
           </h6>
           {% if content.authors %}
             {% assign authors_html = content.authors | replace: 'Sumin Park', '<u>Sumin Park</u>' %}
-            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ authors_html }}</h6>
+            <h6 class="cv-authors ml-1 ml-md-4" style="font-size: 0.95rem">{{ authors_html }}</h6>
           {% endif %}
           <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ content.publisher }}</h6>
           <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ content.summary }}</h6>

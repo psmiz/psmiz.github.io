@@ -63,12 +63,14 @@
     forest → 🌲 (light) / 🌅 (dark)   [legacy: forest itself uses 🌲]
     sunset → 🌲 (light) / 🌅 (dark)   [legacy: sunset itself uses 🌅]
     oxford → 📕 (both modes — burgundy is the main color in light and dark)
+    ink    → ✈️ (both modes — matches favicon.ico)
   Initial value is set from `site.palette` × `default_theme` so the right icon
   ships in the HTML; theme.js updates the href on every theme toggle.
 {% endcomment %}
 {% assign initial_favicon = '✈️' %}
 {% if site.palette == 'sunset' %}{% assign initial_favicon = '🌅' %}{% endif %}
 {% if site.palette == 'oxford' %}{% assign initial_favicon = '📕' %}{% endif %}
+{% if site.palette == 'ink' %}{% assign initial_favicon = '✈️' %}{% endif %}
 
 <link
   id="favicon"

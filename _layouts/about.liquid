@@ -1,56 +1,63 @@
 ---
 layout: default
 ---
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-    {% else %}
-        {{ site.title }}
-      {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
-    
-    <!-- Social icons below name -->
-    {% if page.social %}
-      <div class="social-header">
-        <div class="contact-icons-small">{% include social.liquid %}</div>
-      </div>
-    {% endif %}
-  </header>
-
-  <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
+<div class="post about">
+  <!--
+    Hero: name / role / links + the first bio paragraph on the left, photo on
+    the right cropped to exactly that height. The rest of the bio (research
+    interests, closing paragraph) runs full width below the hero.
+  -->
+  {% assign bio_parts = content | split: '</p>' %}
+  {% assign bio_intro = bio_parts | first | append: '</p>' %}
+  {% assign bio_rest = content | remove_first: bio_intro %}
+  <section class="about-hero{% if page.profile and page.profile.image %} has-photo{% endif %}">
+    <header class="post-header about-head">
+      <h1 class="post-title about-name">
+        {% if site.title == 'blank' %}
+          <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+          {{ site.last_name }}
+        {% else %}
+          {{ site.title }}
         {% endif %}
+      </h1>
+      <p class="desc about-role">{{ page.subtitle }}</p>
+
+      <!-- Social icons below name -->
+      {% if page.social %}
+        <div class="social-header">
+          <div class="contact-icons-small">{% include social.liquid %}</div>
+        </div>
+      {% endif %}
+    </header>
+
+    {% if page.profile and page.profile.image %}
+      <div class="profile about-photo">
+        {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+        {% if page.profile.image_circular %}
+          {% assign profile_image_class = 'img-fluid rounded-circle' %}
+        {% else %}
+          {% assign profile_image_class = 'img-fluid' %}
+        {% endif %}
+        {% capture sizes %}(min-width: 576px) 200px, 120px{% endcapture %}
+        {%
+          include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+          cache_bust=true
+        %}
         {% if page.profile.more_info %}
           <div class="more-info">{{ page.profile.more_info }}</div>
         {% endif %}
       </div>
     {% endif %}
 
-    <div id="intro" class="about-bio clearfix">{{ content }}</div>
+    <div id="intro" class="about-bio">{{ bio_intro }}</div>
+  </section>
 
+  <div class="about-bio about-bio-rest">{{ bio_rest }}</div>
+
+  <article>
     {% if page.ongoing_projects and page.ongoing_projects.items.size > 0 %}
     <section class="ongoing-projects">
       <h2 class="section-title">
-        <div style="height: 0.8em;"></div>
         <span>{{ page.ongoing_projects.title }}</span>
       </h2>
       {% for item in page.ongoing_projects.items %}
@@ -67,7 +74,6 @@ layout: default
     {% if page.news_section and page.news_section.items.size > 0 %}
     <section id="news" class="news-section">
       <h2 class="section-title">
-        <div style="height: 0.8em;"></div>
         <span>{{ page.news_section.title }}</span>
       </h2>
       <ul class="news-list">
@@ -103,7 +109,6 @@ layout: default
     {% if page.selected_papers %}
     <section id="publications" class="selected-publications">
       <h2 class="section-title">
-        <div style="height: 0.8em;"></div>
         <a href="{{ '/publications/' | relative_url }}">Selected publications</a>
       </h2>
       {% include selected_papers.liquid %}

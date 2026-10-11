@@ -220,3 +220,81 @@ html[data-palette="oxford"][data-theme="dark"] {
   --nav-hover-text-color: #{$oxford-dark-point-color};
   --global-accent-color: #{$oxford-dark-point-color};
 }
+
+// =============================================================================
+// Ink palette — opt-in via <html data-palette="ink">.
+// Activated by setting `palette: ink` in _config.yml. Uses the original forest
+// colorset (blue point + teal sub-point, same text/background colors) with the
+// ink layout in _ink.scss. Every variable
+// set in the light block is also set in the dark block, so the dark block
+// (higher specificity) fully wins in dark mode. Component-level tweaks for
+// this palette live in _ink.scss, also scoped to html[data-palette="ink"].
+// Forest / sunset / oxford bindings above are untouched.
+// =============================================================================
+
+html[data-palette="ink"] {
+  color-scheme: light;
+  --global-bg-color: #{$ink-light-bg-color};
+  --global-code-bg-color: #{$ink-light-surface-color};
+  --global-text-color: #{$ink-light-text-color};
+  --global-text-color-light: #{$ink-light-muted-color};
+  --global-sub-point-color: #{$ink-light-sub-point-color};
+  --global-sub-point-color-strong: #{color.adjust($ink-light-sub-point-color, $lightness: -14%)};
+  --global-sub-point-hover-bg: #{rgba($ink-light-sub-point-color, 0.18)};
+  --global-theme-color: #{$ink-light-point-color};
+  --global-hover-color: #{$ink-light-point-color};
+  --nav-hover-color: #{$ink-light-point-color};
+  --nav-hover-text-color: #{$ink-light-point-color};
+  --global-accent-color: #{$ink-light-point-color};
+  --global-hover-text-color: #{$ink-light-bg-color};
+  --global-footer-bg-color: transparent;
+  --global-footer-text-color: #{$ink-light-muted-color};
+  --global-footer-link-color: #{$ink-light-text-color};
+  --global-distill-app-color: #{$ink-light-muted-color};
+  --global-divider-color: #{$ink-light-hairline-color};
+  --global-card-bg-color: #{$ink-light-bg-color};
+  --global-newsletter-bg-color: #{$ink-light-bg-color};
+  --global-newsletter-text-color: #{$ink-light-text-color};
+  // Ink-only tokens (used by _ink.scss).
+  --ink-rule-color: #{$ink-light-rule-color};
+  --ink-control-border: #{$ink-light-control-color};
+  --ink-surface-color: #{$ink-light-surface-color};
+  --ink-link-underline: #{rgba($ink-light-point-color, 0.35)};
+  --ink-chip-bg: #{$ink-light-chip-color};
+  --ink-tag-color: #{$ink-light-sub-point-color};
+  --ink-summary-color: #666666; // card summaries, a bit stronger than muted text
+  --ink-tag-bg: transparent;
+}
+
+html[data-palette="ink"][data-theme="dark"] {
+  color-scheme: dark;
+  --global-bg-color: #{$ink-dark-bg-color};
+  --global-code-bg-color: #{$ink-dark-surface-color};
+  --global-text-color: #{$ink-dark-text-color};
+  --global-text-color-light: #{$ink-dark-muted-color};
+  --global-sub-point-color: #{$ink-dark-sub-point-color};
+  --global-sub-point-color-strong: #{color.adjust($ink-dark-sub-point-color, $lightness: -14%)};
+  --global-sub-point-hover-bg: #{rgba($ink-dark-sub-point-color, 0.18)};
+  --global-theme-color: #{$ink-dark-point-color};
+  --global-hover-color: #{$ink-dark-point-color};
+  --nav-hover-color: #{$ink-dark-point-color};
+  --nav-hover-text-color: #{$ink-dark-point-color};
+  --global-accent-color: #{$ink-dark-point-color};
+  --global-hover-text-color: #{$ink-dark-bg-color};
+  --global-footer-bg-color: transparent;
+  --global-footer-text-color: #{$ink-dark-muted-color};
+  --global-footer-link-color: #{$ink-dark-text-color};
+  --global-distill-app-color: #{$ink-dark-muted-color};
+  --global-divider-color: #{$ink-dark-hairline-color};
+  --global-card-bg-color: #{$ink-dark-card-color};
+  --global-newsletter-bg-color: #{$ink-dark-bg-color};
+  --global-newsletter-text-color: #{$ink-dark-text-color};
+  --ink-rule-color: #{$ink-dark-rule-color};
+  --ink-control-border: #{$ink-dark-control-color};
+  --ink-surface-color: #{$ink-dark-surface-color};
+  --ink-link-underline: #{rgba($ink-dark-point-color, 0.4)};
+  --ink-chip-bg: #{$ink-dark-chip-color};
+  --ink-tag-color: #{$ink-dark-sub-point-color};
+  --ink-summary-color: #a6a6a6;
+  --ink-tag-bg: transparent;
+}

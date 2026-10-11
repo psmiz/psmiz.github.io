@@ -14,6 +14,7 @@
 //   forest – blue point + cyan-green sub-point.
 //   sunset – purple point + peach/light-orange sub-point.
 //   oxford – Oxford Blue point + burgundy sub-point (active default).
+//   ink    – near-monochrome ink + one deep ink-blue accent (quiet academic).
 // The favicon swaps with the active palette × mode (see theme.js / head.liquid).
 // =============================================================================
 
@@ -40,6 +41,32 @@ $oxford-light-point-color: #9b2c3f; // light mode point (burgundy, main)
 $oxford-sub-point-color: #2e4a7a; // light mode sub-point (Oxford navy)
 $oxford-dark-point-color: #d97a8c; // dark mode point (rose burgundy, main)
 $oxford-dark-sub-point-color: #8aa6d9; // dark mode sub-point (light slate-blue)
+
+// Ink – layout from the "quiet academic" redesign, colored with the original
+// forest colorset (blue point + teal sub-point, same text/background colors
+// the site used before). Literal hexes where the base vars are defined later.
+$ink-light-bg-color: #ffffff;
+$ink-light-text-color: #201e1e; // = $black-color
+$ink-light-muted-color: #828282; // = $grey-color
+$ink-light-hairline-color: #d1d1d1; // ≈ forest divider rgba(0,0,0,.183) on white
+$ink-light-rule-color: #c9cdd3; // stronger decorative rule (keycap)
+$ink-light-control-color: #878e98; // form-control border
+$ink-light-surface-color: #e5f2ef; // = $code-bg-color-light
+$ink-light-point-color: $forest-light-point-color; // blue point
+$ink-light-sub-point-color: $forest-sub-point-color; // teal sub-point
+$ink-light-chip-color: #e0e0e0; // venue chip background (as before)
+
+$ink-dark-bg-color: #1c1c1d; // = $grey-color-dark
+$ink-dark-text-color: #e8e8e8; // = $grey-color-light
+$ink-dark-muted-color: #828282; // = $grey-color
+$ink-dark-hairline-color: #424246; // = forest dark divider
+$ink-dark-rule-color: #4a4a4e;
+$ink-dark-control-color: #6a707a; // form-control border
+$ink-dark-surface-color: #2c3237; // = $code-bg-color-dark
+$ink-dark-card-color: #212529; // = $grey-900 (dark card background, as before)
+$ink-dark-point-color: $forest-light-point-color; // forest-on-dark keeps the same blue
+$ink-dark-sub-point-color: $forest-sub-point-color;
+$ink-dark-chip-color: #e0e0e0;
 
 // Colors
 $red-color: #ff3636 !default;

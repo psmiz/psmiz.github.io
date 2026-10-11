@@ -27,10 +27,14 @@ let setThemeSetting = (themeSetting) => {
 //   forest: ✈️ (both modes — forest is the through-line)
 //   sunset (legacy default): 🌲 light, 🌅 dark
 //   oxford: 📕 (both modes — burgundy is the through-line)
+//   ink: ✈️ (both modes — matches favicon.ico)
 let setPaletteEmoji = (theme) => {
   let palette = document.documentElement.getAttribute("data-palette") || "forest";
   let emoji;
-  if (palette === "oxford") {
+  if (palette === "ink") {
+    // Plane in both modes \u2014 matches favicon.ico.
+    emoji = "\u2708\uFE0F";
+  } else if (palette === "oxford") {
     // Burgundy book in both light and dark \u2014 burgundy is the through-line.
     emoji = "\uD83D\uDCD5";
   } else if (palette === "forest") {

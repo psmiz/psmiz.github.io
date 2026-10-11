@@ -47,7 +47,7 @@ repo_trophies:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false # light in-flow footer (true = fixed bar at the bottom of the viewport)
 search_enabled: true
 socials_in_search: true
 posts_in_search: true
@@ -59,7 +59,8 @@ max_width: 790px
 # Site palette: "sunset" (purple point + peach sub-point, default dark mode)
 #               "forest" (blue point + cyan-green sub-point, both modes when selected)
 #               "oxford" (Oxford Blue point + burgundy sub-point, both modes when selected)
-palette: forest
+#               "ink"    (redesigned layout from _sass/_ink.scss, colored with the forest colorset)
+palette: ink
 
 # TODO: add layout settings (single page vs. multi-page)
 

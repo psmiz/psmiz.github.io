@@ -3,8 +3,6 @@
     "name": "Sumin Park",
     "status": "M.S. Student in Computer Science",
     "email": "psmiz@kaist.ac.kr",
-    "phone": "+82-10-3475-0804",
-    "url": "https://psmiz.github.io",
     "location": {
       "city": "Daejeon",
       "countryCode": "KR",
@@ -48,7 +46,7 @@
 
   "work": [
     {
-      "name": "CAMAIL, Max Planck Institute for Intelligent Systems / ELLIS Institute Tübingen",
+      "name": "CAMAIL, Max Planck Institute for Intelligent Systems and ELLIS Institute Tübingen",
       "position": "Research Intern",
       "location": "Tübingen, Germany",
       "startDate": "2026-07",

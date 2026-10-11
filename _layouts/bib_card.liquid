@@ -14,10 +14,21 @@
   {% assign venue_short = publisher %}
 {% endif %}
 
+{% comment %}
+  Homepage "Selected publications" card.
+  Order: meta row (venue chip · year) → title → authors → summary →
+  keyword chips → link buttons (pinned to the card bottom so cards in a row
+  line up). The ABS button must stay a direct child of .selected-paper-links,
+  whose parent holds div.abstract.hidden (common.js toggles it via
+  $(this).parent().parent()).
+{% endcomment %}
 <div class="selected-paper-card-inner">
-  <div class="selected-paper-year">{{ entry.year }}</div>
-  <div class="selected-paper-tags">
-    <span class="selected-paper-tag">{{ venue_short }}</span>
+  <div class="selected-paper-meta">
+    <span class="selected-paper-tags">
+      <span class="selected-paper-tag">{{ venue_short }}</span>
+    </span>
+    <span class="selected-paper-meta-sep" aria-hidden="true">·</span>
+    <span class="selected-paper-year">{{ entry.year }}</span>
   </div>
   <div class="selected-paper-title">{{ entry.title }}</div>
   <div class="selected-paper-authors">
@@ -31,7 +42,7 @@
       {% assign author_last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' %}
       {% assign author_last_html = author.last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' %}
       {% if site.scholar.last_name contains author_last_name and site.scholar.first_name contains author.first %}
-        <strong><em><u>{{ author.first }} {{ author_last_html }}</u></em></strong>{% unless forloop.last %}, {% endunless %}
+        <strong class="author-self"><em><u>{{ author.first }} {{ author_last_html }}</u></em></strong>{% unless forloop.last %}, {% endunless %}
       {% else %}
         {{ author.first }} {{ author_last_html }}{% unless forloop.last %}, {% endunless %}
       {% endif %}

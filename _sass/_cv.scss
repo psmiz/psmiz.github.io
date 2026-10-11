@@ -4,13 +4,17 @@
 
 /* On CV pages only, shift the TOC-sidebar/content split from 3+9 to 2+10
  * so the card area grows without resizing the outer container. */
-.row:has(.cv) > .col-sm-3 {
-  flex: 0 0 16.666667%;
-  max-width: 16.666667%;
-}
-.row:has(.cv) > .col-sm-9 {
-  flex: 0 0 83.333333%;
-  max-width: 83.333333%;
+@media (min-width: 576px) {
+  /* Only from the sm breakpoint up: on phones the TOC is hidden and the
+   * content column must take the full width instead of 10/12 of it. */
+  .row:has(.cv) > .col-sm-3 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+  .row:has(.cv) > .col-sm-9 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
 }
 
 /* Give the date/location column a fixed width wide enough for its content
@@ -18,8 +22,8 @@
  * gets too narrow and lets the text run into the next column. */
 @media (min-width: 768px) {
   .cv .list-group-item > .row > .date-column {
-    flex: 0 0 8.8em;
-    max-width: 8.8em;
+    flex: 0 0 9.7em;
+    max-width: 9.7em;
   }
   .cv .list-group-item > .row > .date-column + div {
     flex: 1 1 0;

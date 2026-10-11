@@ -19,9 +19,10 @@ body {
 }
 
 body.fixed-top-nav {
-  // Add some padding for the nav-bar.
+  // Add some padding for the nav-bar. (The old 20px left offset for the
+  // homepage section sidebar is gone with the sidebar, so the page content
+  // lines up with the navbar brand again.)
   padding-top: 45px;
-  padding-left: 20px;
 }
 
 // Adjust gap between header and page title

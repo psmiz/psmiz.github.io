@@ -238,6 +238,97 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// Homepage hero: name / role / links + bio in the left column, photo in its
+// own right-hand column (no float, so the bio never wraps around the photo).
+// On phones the photo shrinks to a small portrait beside the name.
+.about-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    "head"
+    "bio";
+  column-gap: 2.5rem;
+
+  &.has-photo {
+    grid-template-columns: minmax(0, 1fr) 10rem;
+    grid-template-areas:
+      "head photo"
+      "bio  photo";
+  }
+
+  .about-head {
+    grid-area: head;
+    margin-bottom: 1.1rem;
+  }
+
+  .about-bio {
+    grid-area: bio;
+    min-width: 0;
+  }
+
+  // Square, tightly framed photo (sky, trees and side tables cropped away)
+  // sitting at the bottom of the hero, level with the end of the intro.
+  .profile.about-photo {
+    grid-area: photo;
+    position: relative;
+    align-self: end;
+    top: 0.6rem; // nudge slightly below the end of the intro
+    width: auto;
+    aspect-ratio: 1 / 1;
+    margin: 0;
+    float: none;
+
+    figure,
+    picture {
+      position: absolute;
+      inset: 0;
+      margin: 0;
+    }
+
+    figure {
+      overflow: hidden;
+      border-radius: 3px;
+    }
+
+    // Bottom-anchored cover crop, then a 1.23x zoom anchored at 75% / bottom:
+    // keeps roughly the lower two-thirds of the photo and x ≈ 14–95% of its
+    // width — the subject, no sky, no side tables.
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 100%;
+      transform: scale(1.23);
+      transform-origin: 75% 100%;
+    }
+  }
+
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    column-gap: 1.75rem;
+
+    &.has-photo {
+      grid-template-columns: minmax(0, 1fr) 10.5rem;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    column-gap: 1.1rem;
+
+    &.has-photo {
+      grid-template-columns: minmax(0, 1fr) 6.75rem;
+      grid-template-areas:
+        "head photo"
+        "bio  bio";
+    }
+
+    .profile.about-photo {
+      margin-top: 0.15rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
 .research-interest {
   margin-bottom: 0.85rem;
 
@@ -1224,6 +1315,8 @@ footer.sticky-bottom {
   }
 }
 
+// Homepage "Selected publications": quiet list rows separated by hairlines.
+//   [VENUE / year]  Title / authors / summary / text links + keywords
 .selected-papers-grid.publications {
   margin-top: 1rem;
 
@@ -1562,14 +1655,16 @@ nav[data-toggle="toc"] {
 /* small screens */
 @media (max-width: 576px) {
   /* override stickyness so that the navigation does not follow scrolling */
+  /* (display: none as well — the TOC links otherwise still paint over the content) */
   nav[data-toggle="toc"] {
+    display: none;
     visibility: hidden;
     height: 0;
     top: 0;
   }
 
-  /* Fix profile image on mobile */
-  .profile {
+  /* Fix profile image on mobile (the homepage hero photo has its own grid sizing) */
+  .profile:not(.about-photo) {
     width: 60% !important;
     max-width: 300px;
     float: none !important;
