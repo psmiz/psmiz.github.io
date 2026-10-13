@@ -6,7 +6,7 @@ subtitle: M.S. student at KAIST
 
 profile:
   align: right
-  image: profile.jpeg
+  image: profile2.jpeg
   image_circular: false # crops the image to make it circular
 
 research_interest:

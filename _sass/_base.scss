@@ -7,7 +7,7 @@
 // so changing this single value rescales fonts, paddings, margins and any
 // rem-based image / element sizes proportionally.
 html {
-  font-size: 85%;
+  font-size: 102%;
 }
 
 // Typography
@@ -250,7 +250,7 @@ ul.task-list input[type="checkbox"] {
   column-gap: 2.5rem;
 
   &.has-photo {
-    grid-template-columns: minmax(0, 1fr) 10rem;
+    grid-template-columns: minmax(0, 1fr) 11rem;
     grid-template-areas:
       "head photo"
       "bio  photo";
@@ -272,7 +272,7 @@ ul.task-list input[type="checkbox"] {
     grid-area: photo;
     position: relative;
     align-self: end;
-    top: 0.8rem; // nudge slightly below the end of the intro
+    top: 1.4rem; // nudge slightly below the end of the intro
     width: auto;
     aspect-ratio: 1 / 1;
     margin: 0;
@@ -287,20 +287,17 @@ ul.task-list input[type="checkbox"] {
 
     figure {
       overflow: hidden;
-      border-radius: 3px;
+      border-radius: 5px;
     }
 
-    // Bottom-anchored cover crop, then a 1.23x zoom anchored at 75% / bottom:
-    // keeps roughly the lower two-thirds of the photo and x ≈ 14–95% of its
-    // width — the subject, no sky, no side tables.
+    // profile2.jpeg is pre-cropped; just fit it to the square box (trims a
+    // little from the bottom, keeping the face and the Eiffel Tower arch).
     img {
       display: block;
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: 50% 100%;
-      transform: scale(1.23);
-      transform-origin: 75% 100%;
+      object-position: 50% 35%;
     }
   }
 

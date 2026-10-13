@@ -54,7 +54,7 @@ posts_in_search: true
 bib_search: true
 
 # Dimensions
-max_width: 790px
+max_width: 948px
 
 # Site palette: "sunset" (purple point + peach sub-point, default dark mode)
 #               "forest" (blue point + cyan-green sub-point, both modes when selected)
