@@ -261,7 +261,7 @@ html[data-palette="ink"] {
   --ink-surface-color: #{$ink-light-surface-color};
   --ink-link-underline: #{rgba($ink-light-point-color, 0.35)};
   --ink-chip-bg: #{$ink-light-chip-color};
-  --ink-tag-color: #{$ink-light-sub-point-color};
+  --ink-tag-color: #{color.adjust($ink-light-sub-point-color, $lightness: -14%)}; // = subtitle teal (sub-point-strong)
   --ink-summary-color: #666666; // card summaries, a bit stronger than muted text
   --ink-tag-bg: transparent;
 }
@@ -294,7 +294,7 @@ html[data-palette="ink"][data-theme="dark"] {
   --ink-surface-color: #{$ink-dark-surface-color};
   --ink-link-underline: #{rgba($ink-dark-point-color, 0.4)};
   --ink-chip-bg: #{$ink-dark-chip-color};
-  --ink-tag-color: #{$ink-dark-sub-point-color};
+  --ink-tag-color: #{color.adjust($ink-dark-sub-point-color, $lightness: -14%)}; // = subtitle teal (sub-point-strong)
   --ink-summary-color: #a6a6a6;
   --ink-tag-bg: transparent;
 }

@@ -53,7 +53,7 @@ $ink-light-rule-color: #c9cdd3; // stronger decorative rule (keycap)
 $ink-light-control-color: #878e98; // form-control border
 $ink-light-surface-color: #e5f2ef; // = $code-bg-color-light
 $ink-light-point-color: $forest-light-point-color; // blue point
-$ink-light-sub-point-color: $forest-sub-point-color; // teal sub-point
+$ink-light-sub-point-color: #5bbac5; // forest teal (#5bc5c5) nudged ~6° toward blue
 $ink-light-chip-color: #e0e0e0; // venue chip background (as before)
 
 $ink-dark-bg-color: #1c1c1d; // = $grey-color-dark
@@ -65,7 +65,7 @@ $ink-dark-control-color: #6a707a; // form-control border
 $ink-dark-surface-color: #2c3237; // = $code-bg-color-dark
 $ink-dark-card-color: #212529; // = $grey-900 (dark card background, as before)
 $ink-dark-point-color: $forest-light-point-color; // forest-on-dark keeps the same blue
-$ink-dark-sub-point-color: $forest-sub-point-color;
+$ink-dark-sub-point-color: #5bbac5;
 $ink-dark-chip-color: #e0e0e0;
 
 // Colors

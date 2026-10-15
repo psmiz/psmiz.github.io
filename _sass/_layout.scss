@@ -4,7 +4,10 @@
 
 body {
   padding-bottom: 70px;
-  font-family: "Space Mono", "SFMono-Regular", Menlo, monospace;
+  // "Space Grotesk" is loaded with digits only, so 0-9 come from it (plain zero)
+  // and every other character falls through to Space Mono.
+  font-family: "Space Grotesk", "Space Mono", "SFMono-Regular", Menlo, monospace;
+  font-variant-numeric: tabular-nums;
   color: var(--global-text-color);
   background-color: var(--global-bg-color);
 
