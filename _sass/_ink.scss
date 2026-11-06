@@ -374,6 +374,22 @@ html[data-palette="ink"] {
       color: var(--global-text-color-light);
     }
 
+    // Location under the news date (pin + small grey text, like the CV).
+    .news-location {
+      display: block;
+      margin-top: 0.2rem;
+      font-size: 0.7rem;
+      font-weight: 400;
+      color: var(--global-text-color-light);
+      white-space: nowrap;
+
+      i {
+        color: var(--global-theme-color);
+        font-size: 0.8rem;
+        margin-right: 0.15rem;
+      }
+    }
+
     .news-body {
       font-size: 0.88rem; // same size as the bio text
       line-height: 1.65;

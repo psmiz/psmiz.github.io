@@ -27,12 +27,18 @@ _ongoing_projects:
 news_section:
   title: News
   items:
+    - date: "Nov 2026"
+      tag: "Invited Talk"
+      location: "Linz, Austria"
+      description: "Giving an invited talk, ***Quotient Space Convergence for Looped Reasoning***, at the workshop [Learning-Based Methods in Scientific Computing](https://www.ricam.oeaw.ac.at/specsem/specsem2026/workshop3/) (Special Semester on AI in Scientific Computing) at RICAM (Nov 17)."
     - date: "Jul 2026 – Jan 2027"
       tag: "Research Internship"
-      description: "Joining the [Computational Applied Mathematics & AI Lab (CAMAIL)](https://camail.org/) at the **ELLIS Institute Tübingen** and **Max Planck Institute for Intelligent Systems** as a research intern, advised by **T. Konstantin Rusch**, for the research project on linear recurrent sequence models."
+      location: "Tübingen, Germany"
+      description: "Joining the [Computational Applied Mathematics & AI Lab (CAMAIL)](https://camail.org/) at the **Max Planck Institute for Intelligent Systems** as a research intern, advised by **T. Konstantin Rusch**, for the research project on linear recurrent sequence models."
     - date: "Jul 2026"
       tag: "ICML Conference"
-      description: "Attending ICML 2026 (Jul 6&ndash;11) in Korea to present two works, ***Q-Delta*** and ***STAR***."
+      location: "Seoul, South Korea"
+      description: "Attending ICML 2026 (Jul 6&ndash;11) to present two works, ***Q-Delta*** and ***STAR***."
 
 news: true  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts

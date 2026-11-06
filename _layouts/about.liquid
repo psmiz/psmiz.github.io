@@ -79,7 +79,12 @@ layout: default
       <ul class="news-list">
         {% for item in page.news_section.items %}
         <li class="news-item">
-          <div class="news-date">{{ item.date }}</div>
+          <div class="news-date">
+            {{ item.date }}
+            {% if item.location %}
+              <span class="news-location"><i class="fa-solid fa-location-dot"></i> {{ item.location }}</span>
+            {% endif %}
+          </div>
           <div class="news-body">
             {% if item.tag %}<span class="news-tag">{{ item.tag }}</span>{% endif %}
             <span class="news-desc">{{ item.description | markdownify | remove: '<p>' | remove: '</p>' }}</span>

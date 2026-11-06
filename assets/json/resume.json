@@ -19,12 +19,11 @@
       }
     ]
   },
-
   "education": [
     {
       "institution": "Korea Advanced Institute of Science and Technology (KAIST)",
       "location": "Daejeon, South Korea",
-      "area": "Computer Science",
+      "area": "Computer Science (expected Feb 2027)",
       "studyType": "M.S.",
       "startDate": "2024-09",
       "endDate": "Present",
@@ -43,7 +42,6 @@
       ]
     }
   ],
-
   "work": [
     {
       "name": "CAMAIL, Max Planck Institute for Intelligent Systems and ELLIS Institute Tübingen",
@@ -62,7 +60,7 @@
       "location": "Daejeon, South Korea",
       "startDate": "2024-09",
       "endDate": "Present",
-      "summary": "Research on efficient sequence modeling, Mixture-of-Experts (MoE), Large Language Models (LLMs)",
+      "summary": "Research on interpretable LLM architectures, efficient sequence modeling based on linear recurrent structures such as linear attention and state space models (SSMs), and mixture-of-experts (MoE) for efficient network specialization.",
       "highlights": [
         "Advisor: Noseong Park"
       ]
@@ -73,7 +71,7 @@
       "location": "Seoul, South Korea",
       "startDate": "2023-07",
       "endDate": "2024-08",
-      "summary": "Research on graph representation learning and graph neural networks (GNN).",
+      "summary": "Research on graph representation learning and graph neural networks (GNNs).",
       "highlights": [
         "Advisor: Noseong Park"
       ]
@@ -94,7 +92,8 @@
       "endDate": "2021-01",
       "summary": "Research on electrophysiology and PFC-involved systems consolidation.",
       "highlights": [
-        "Advisor: Seokho Lee"
+        "Advisor: Seokho Lee",
+        "Investigated how recurrent connectivity between cortical layers (L2/3–L5) in the medial PFC contributes to long-term memory consolidation using patch-clamp electrophysiology."
       ]
     },
     {
@@ -109,11 +108,10 @@
       ]
     }
   ],
-
   "publications": [
     {
       "name": "Looped Reasoning Finishes Earlier Than You Think",
-      "publisher": "Under Review",
+      "publisher": "Under Review for ICLR 2027",
       "releaseDate": "2027",
       "authors": "Sumin Park, T. Konstantin Rusch"
     },
@@ -154,7 +152,17 @@
       "authors": "Jeongwhan Choi, Sumin Park, Hyowon Wi, Sung-Bae Cho, Noseong Park"
     }
   ],
-
+  "talks": [
+    {
+      "title": "Quotient Space Convergence for Looped Reasoning",
+      "event": "AI in Scientific Computing: Learning-Based Methods in Scientific Computing",
+      "venue": "RICAM",
+      "location": "Linz, Austria",
+      "date": "Nov 17, 2026",
+      "type": "Invited Talk",
+      "url": "https://www.ricam.oeaw.ac.at/specsem/specsem2026/workshop3/"
+    }
+  ],
   "projects": [
     {
       "name": "Simulation-Based Defect Variable Identification from High-Resolution Images",
@@ -168,11 +176,10 @@
       ]
     }
   ],
-
   "awards": [
     {
       "title": "Summa Cum Laude",
-      "date": "2020",
+      "date": "Feb 2021",
       "awarder": "Ewha Womans University"
     },
     {
@@ -201,15 +208,36 @@
       "awarder": "Ewha Womans University"
     }
   ],
-
   "skills": [
     {
       "name": "Programming & Frameworks",
-      "keywords": ["Python", "R", "C++", "PyTorch", "Triton"]
+      "keywords": [
+        "Python",
+        "R",
+        "C++",
+        "PyTorch",
+        "Triton"
+      ]
     },
     {
       "name": "Systems & Tools",
-      "keywords": ["Linux", "Git", "Docker", "AWS", "SQL"]
+      "keywords": [
+        "Linux",
+        "Git",
+        "Docker",
+        "AWS",
+        "SQL"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Korean",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "IELTS Academic 8.0 (Jun 2026)"
     }
   ]
 }
