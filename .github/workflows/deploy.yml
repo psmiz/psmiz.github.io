@@ -74,6 +74,7 @@ jobs:
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
+          # "3.3" = latest 3.3.x; Ubuntu 26.04 runners only ship the newest patch of each series.
           ruby-version: "3.3"
           bundler-cache: true
       - name: Setup Python 🐍
