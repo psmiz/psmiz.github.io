@@ -30,7 +30,7 @@ news_section:
     - date: "Nov 2026"
       tag: "Invited Talk"
       location: "Linz, Austria"
-      description: "Giving an invited talk, ***Quotient Space Convergence for Looped Reasoning***, at the workshop [Learning-Based Methods in Scientific Computing](https://www.ricam.oeaw.ac.at/specsem/specsem2026/workshop3/) (Special Semester on AI in Scientific Computing) at RICAM (Nov 17)."
+      description: "Giving an invited talk, ***Quotient Space Convergence for Looped Reasoning***, at the workshop [Learning-Based Methods in Scientific Computing](https://www.ricam.oeaw.ac.at/specsem/specsem2026/workshop3/) at RICAM (Nov 17)."
     - date: "Jul 2026 – Jan 2027"
       tag: "Research Internship"
       location: "Tübingen, Germany"
