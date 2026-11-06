@@ -250,7 +250,7 @@ ul.task-list input[type="checkbox"] {
   column-gap: 2.5rem;
 
   &.has-photo {
-    grid-template-columns: minmax(0, 1fr) 11rem;
+    grid-template-columns: minmax(0, 1fr) 11.5rem;
     grid-template-areas:
       "head photo"
       "bio  photo";
@@ -298,6 +298,33 @@ ul.task-list input[type="checkbox"] {
       height: 100%;
       object-fit: cover;
       object-position: 50% 35%;
+    }
+  }
+
+  // Desktop/tablet: pin the photo's top to the start of the intro paragraph.
+  // height: 0 keeps it from growing the intro row, so it can hang down beside
+  // the start of the interest list instead of pushing the list down.
+  @media (min-width: 576px) {
+    &.has-photo {
+      grid-template-areas:
+        "head ."
+        "bio  photo";
+    }
+
+    .profile.about-photo {
+      align-self: start;
+      top: 0.4rem; // starts a hair below the first intro line
+      height: 0;
+      aspect-ratio: auto;
+
+      figure {
+        inset: auto;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+      }
     }
   }
 

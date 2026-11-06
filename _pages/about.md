@@ -10,11 +10,11 @@ profile:
   image_circular: false # crops the image to make it circular
 
 research_interest:
-  title: Research Interest
+  # title: Research Interest  # heading hidden; the intro already says "My current interests include:"
   items:
     - Mechanistic interpretability of LLMs
-    - Efficient sequence modeling with state space models and linear attention
-    - Latent dynamics and convergence of looped reasoning for efficient test-time scaling
+    - Recurrent neural dynamics for efficient sequence modeling and adaptive reasoning
+    - Feedback-driven neural adaptation
 
 # NOTE: prefix the key with `_` to hide a section without deleting it.
 # Rename back to `ongoing_projects` to make it visible again.
@@ -46,13 +46,13 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a Master's student at School of Computing, Korea Advanced Institute of Science and Technology (KAIST), advised by Professor [Noseong Park](https://sites.google.com/view/npark/home?authuser=0). 
-My research focuses on **how architectural inductive biases and training dynamics give rise to structured internal representations and functional specialization in large-scale neural networks**.
-More specifically, my current interests include:
+I am a Master's student in the School of Computing at KAIST, advised by Prof. [Noseong Park](https://sites.google.com/view/npark/home?authuser=0).
+My research broadly studies **how architectural inductive biases and training dynamics shape internal representations and functional specialization in neural networks**.
+My current interests include:
 
 {% include research_interest_inline.liquid %}
 
-Building on my undergraduate background in neuroscience, my longer-term research direction lies in introducing **brain-inspired inductive biases** as a conceptual framework for understanding and designing universal learning principles that can be shared by both brain and machines.
+Building on my undergraduate background in neuroscience, I am also drawn to **brain-inspired inductive biases** as universal learning principles that can be shared by both brain and machine.
 
 
 <!-- My research generally focuses on **interpretable LLM architectures, and representation learning** for sequential and graph-structured data. Specifically, my recent work focuses on **linear attention mechanisms based on state-space dynamics and Mixture-of-Experts architectures for efficient and scalable LLMs**.

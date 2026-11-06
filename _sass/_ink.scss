@@ -238,6 +238,14 @@ html[data-palette="ink"] {
     font-size: 0.88rem;
   }
 
+  // The photo hangs beside the interest list, so the list wraps at the same
+  // right edge as the intro text (photo column 11.5rem + column gap 2.5rem).
+  @media (min-width: 576px) {
+    .about-hero.has-photo + .about-bio-rest .research-interest-list {
+      max-width: calc(100% - 14rem);
+    }
+  }
+
   // Rest of the bio (research interests + closing paragraph), full width below the hero.
   .about-bio-rest {
     p {
@@ -277,7 +285,7 @@ html[data-palette="ink"] {
 
   // Research interests: hanging-indent list with small accent-square bullets.
   .research-interest {
-    margin: 1.15rem 0 1.25rem;
+    margin: 0.55rem 0 0.65rem;
 
     .research-interest-title {
       font-size: 0.85rem;
