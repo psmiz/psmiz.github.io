@@ -34,7 +34,7 @@ news_section:
     - date: "Jul 2026 – Jan 2027"
       tag: "Research Internship"
       location: "Tübingen, Germany"
-      description: "Joining the [Computational Applied Mathematics & AI Lab (CAMAIL)](https://camail.org/) at the **Max Planck Institute for Intelligent Systems** as a research intern, advised by **T. Konstantin Rusch**, for the research project on linear recurrent sequence models."
+      description: "Joining the [Computational Applied Mathematics & AI Lab (CAMAIL)](https://camail.org/) at the **Max Planck Institute for Intelligent Systems** as a research intern, advised by **T. Konstantin Rusch**."
     - date: "Jul 2026"
       tag: "ICML Conference"
       location: "Seoul, South Korea"
